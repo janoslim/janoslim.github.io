@@ -22,7 +22,7 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Artificial I
 
 ## Publications
 
-1. <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b><br>
+1. <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b> <a href="https://github.com/hpcp-yonsei/pid-join">[GitHub]</a><br>
 Chaemin Lim, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim<br>
 <i>2023 ACM SIGMOD International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023
 
