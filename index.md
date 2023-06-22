@@ -10,7 +10,7 @@ layout: default
   
 <img class="profile-picture" src="chaemin.png">
 
-Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Artificial Intelligence at Yonsei University with my advisor <a href="https://hpcp.yonsei.ac.kr/~youngsok/">Prof. Youngsok Kim</a>.
+Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Artificial Intelligence at Yonsei University with my advisor Prof. Youngsok Kim.
 
 ## Research Interest
 
