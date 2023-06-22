@@ -34,6 +34,6 @@ Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, 
 
 ## Education
 
-* MS/PhD Student at the Department of Artificial Intelligence at Yonsei University
-* BA in Journalism at Hankuk University of Foreign Studies
-* BEng in Computer Engineering at Hankuk University of Foreign Studies
+* [2021 - Current] MS/PhD Student at the Department of Artificial Intelligence at Yonsei University
+* [2017 - 2021] BA in Journalism at Hankuk University of Foreign Studies
+* [2017 - 2021] BEng in Computer Engineering at Hankuk University of Foreign Studies
