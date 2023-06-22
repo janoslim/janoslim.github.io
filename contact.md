@@ -3,24 +3,16 @@ layout: default
 is_contact: true
 ---
 
-* Email: [foo@xyz.com](mailto:foo@xyz.com)
-
-* Phone: [+91-123123](tel:+91-123123)
+* Email: [cmlim at yonsei.ac.kr](mailto:cmlim@yonsei.ac.kr)
 
 ---
 
 ## Mailing Address
 
-> 221B, Baker Street
+> D711, Yonsei-ro 50
 >
-> London
+> Seodaemun-gu, Seoul
 >
-> United Kingdom
+> South Korea
 
 ---
-
-## Social
-
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
