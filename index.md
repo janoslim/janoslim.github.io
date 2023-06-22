@@ -14,12 +14,11 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Artificial I
 
 ## Research Interest
 
+* Database/Operating Systems on Modern Hardwares
 * Hardware/Software Co-optimization
 * Concurrent Computing
 * Heterogeneous Computing
-* Operating Systems
-* Database Systems
-
+ 
 ## Publications
 
 1. <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b> <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a><br>
