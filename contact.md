@@ -9,10 +9,9 @@ is_contact: true
 
 ## Mailing Address
 
-> D711, Yonsei-ro 50
->
+> D711, 4th Engineering Hall
+> Yonsei-ro 50
 > Seodaemun-gu, Seoul
->
 > South Korea
 
 ---
