@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chaemin Lim</title>
+</head>
+<body>
+<h1>Chaemin Lim</h1>
+  <a href="https://hpcp.yonsei.ac.kr/">HPCP Lab</a> @ Yonsei University<br>
+  Advisor: <a href="https://hpcp.yonsei.ac.kr/~youngsok/">Prof. Youngsok Kim</a><br>
+  cmlim@yonsei.ac.kr<br>
+<hr>
+  
+<h2>Research Interests</h2>
+<ul>
+<li>Hardware/Software Co-optimization</li>
+<li>Heterogeneous Computing</li>
+<li>Database Systems</li>
+</ul>
+ <hr>
+  
+<h2>Publications</h2>
+<li><b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b><br>
+Chaemin Lim, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim<br>
+<i>2023 ACM SIGMOD International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023<br>
+<li><b><a href="https://dl.acm.org/doi/10.1145/3528535.3531513">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></b><br>
+Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, Chaemin Lim<small><sup>1</sup></small>, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim<br>
+<i>23rd ACM/IFIP International Middleware Conference (<b>Middleware</b>)</i>, Nov. 2022 <br>
+<small><sup>1</sup>Co-first authors</small><br></li>
+ <hr>
+<h2>Education</h2>
+  <li>MS/PhD Student at the Department of Artificial Intelligence at Yonsei University</li>
+  <li>BA in Journalism at Hankuk University of Foreign Studies</li>
+  <li>BEng in Computer Engineering at Hankuk University of Foreign Studies</li>
+</body>
+</html> 
+
