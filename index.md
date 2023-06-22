@@ -2,8 +2,6 @@
 layout: default
 ---
 
-
-
 ## About Me
 
 <img class="profile-picture" src="sherlock.jpg">
@@ -12,13 +10,11 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Artificial I
 
 ## Research Interest
 
-<ul>
-<li>Hardware/Software Co-optimization</li>
-<li>Concurrent Computing</li>
-<li>Heterogeneous Computing</li>
-<li>Operating Systems</li>
-<li>Database Systems</li>
-</ul>
+* Hardware/Software Co-optimization
+* Concurrent Computing
+* Heterogeneous Computing
+* Operating Systems
+* Database Systems
 
 ## Publications
 
