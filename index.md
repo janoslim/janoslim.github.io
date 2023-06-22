@@ -4,9 +4,13 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="sherlock.jpg">
+<a href="https://hpcp.yonsei.ac.kr/">HPCP Lab</a> @ Yonsei University<br>
+  Advisor: <a href="https://hpcp.yonsei.ac.kr/~youngsok/">Prof. Youngsok Kim</a><br>
+  cmlim@yonsei.ac.kr<br>
+  
+<img class="profile-picture" src="chaemin.png">
 
-Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Artificial Intelligence at Yonsei University.
+Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Artificial Intelligence at Yonsei University with my advisor <a href="https://hpcp.yonsei.ac.kr/~youngsok/">Prof. Youngsok Kim</a>.
 
 ## Research Interest
 
