@@ -32,15 +32,15 @@ Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, 
 
 ## Invited Talks
 
-1. <b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023
+1. <b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023<br>
 
 ## Projects
 
-1. <b>Development of New Concept PIM Semiconductor Leading Technology</b>
-<i>Institute for Information and communication Technology Planning and evaluation (IITP)</i>
+1. <b>Development of New Concept PIM Semiconductor Leading Technology</b><br>
+<i>Institute for Information and communication Technology Planning and evaluation (IITP)</i><br>
 
-2. <b>STACK: Smart, Attack-Resistant Internet of Things Networks</b>
-<i>Korea Institute for Advancement of Technology (KIAT)</i>
+2. <b>STACK: Smart, Attack-Resistant Internet of Things Networks</b><br>
+<i>Korea Institute for Advancement of Technology (KIAT)</i><br>
 
 ## Education
 
