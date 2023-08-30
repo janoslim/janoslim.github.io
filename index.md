@@ -30,7 +30,9 @@ Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, 
 <i>23rd ACM/IFIP International Middleware Conference (<b>Middleware</b>)</i>, Nov. 2022 <br>
 <small><sup>1</sup>Co-first authors</small><br>
 
+## Invited Talks
 
+1. <b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023
 ## Education
 
 * [2021 - Current] MS/PhD Student at the Department of Artificial Intelligence at Yonsei University
