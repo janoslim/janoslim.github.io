@@ -33,6 +33,15 @@ Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, 
 ## Invited Talks
 
 1. <b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023
+
+## Projects
+
+1. <b>Development of New Concept PIM Semiconductor Leading Technology</b>
+<i>Institute for Information and communication Technology Planning and evaluation (IITP)</i>
+
+2. <b>STACK: Smart, Attack-Resistant Internet of Things Networks</b>
+<i>Korea Institute for Advancement of Technology (KIAT)</i>
+
 ## Education
 
 * [2023 - Current] PhD Student at the Department of Computer Science at Yonsei University
