@@ -35,6 +35,7 @@ Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, 
 1. <b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023
 ## Education
 
-* [2021 - Current] MS/PhD Student at the Department of Artificial Intelligence at Yonsei University
+* [2023 - Current] PhD Student at the Department of Computer Science at Yonsei University
+* [2021 - 2023] MS in Artificial Intelligence at Yonsei University
 * [2017 - 2021] BEng in Computer Engineering at Hankuk University of Foreign Studies (Double Major)
 * [2017 - 2021] BA in Journalism at Hankuk University of Foreign Studies
