@@ -32,7 +32,7 @@ Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, 
 
 ## Invited Talks
 
-1. <b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023<br>
+1. <b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023<br> <a href="https://youtu.be/G_9Zd1EwQ-8?si=sSJNSfTsD_ttAgR-">[Youtube]</a>
 
 ## Projects
 
