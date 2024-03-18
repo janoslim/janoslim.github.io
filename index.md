@@ -34,6 +34,12 @@ Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, 
 
 1. <b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023<br> <a href="https://youtu.be/G_9Zd1EwQ-8?si=sSJNSfTsD_ttAgR-">[Youtube]</a>
 
+## Awards
+
+1. Encouragement Prize (2024) @ Samsung Humantech Paper Awards (삼성휴먼테크논문대상)
+"PID-Comm: Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMM Devices"
+Jungwook Hong, Siwoong Roh, Seongyeon Park, and <b>Chaemin Lim</b>
+
 ## Projects
 
 1. <b>Development of New Concept PIM Semiconductor Leading Technology</b><br>
