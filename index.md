@@ -14,10 +14,7 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Computer Sci
 
 ## Research Interest
 
-* Database/Operating Systems on Modern Hardwares
-* Hardware/Software Co-optimization
-* Concurrent Computing
-* Heterogeneous Computing
+* Hardware/Software Co-optimization with Modern Hardwares
  
 ## Publications
 
