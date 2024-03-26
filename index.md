@@ -21,6 +21,7 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Computer Sci
 1. <b>PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</b><br>
 Si Ung Noh<small><sup>1</sup></small>, Junguk Hong<small><sup>1</sup></small>, <b>Chaemin Lim</b>, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee<br>
 <i>51st IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June&ndash;July 2024 (to appear)<br>
+<small><sup>1</sup>Co-first authors</small><br>
 
 2. <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b> <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a><br>
 <b>Chaemin Lim</b>, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim<br>
@@ -39,7 +40,7 @@ Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, 
 
 1. Encouragement Prize (2024) @ Samsung Humantech Paper Awards (삼성휴먼테크논문대상)
 "PID-Comm: Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMM Devices"
-Jungwook Hong, Siwoong Roh, Seongyeon Park, and <b>Chaemin Lim</b>
+Junguk Hong, Si Ung Noh, Seongyeon Park, and <b>Chaemin Lim</b>
 
 ## Projects
 
