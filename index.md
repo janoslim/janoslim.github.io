@@ -19,8 +19,8 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Computer Sci
 ## Publications
 
 1. <b>SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</b><br>
-        Suhyun Lee, <b>Chaemin Lim</b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim<<br>
-        <i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025 (to appear)<br>
+Suhyun Lee, <b>Chaemin Lim</b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim<<br>
+<i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025 (to appear)<br>
         
 2. <b><a href="https://arxiv.org/abs/2404.08871">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></b><br>
 Si Ung Noh<small><sup>1</sup></small>, Junguk Hong<small><sup>1</sup></small>, <b>Chaemin Lim</b>, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee</a><br>
@@ -29,7 +29,7 @@ Si Ung Noh<small><sup>1</sup></small>, Junguk Hong<small><sup>1</sup></small>, <
 
 3. <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b> <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a><br>
 <b>Chaemin Lim</b>, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim<br>
-<i>2023 ACM SIGMOD International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023
+<i>2023 ACM SIGMOD International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023<br>
 
 4. <b><a href="https://dl.acm.org/doi/10.1145/3528535.3531513">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></b><br>
 Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, <b>Chaemin Lim<small><sup>1</sup></small></b>, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim<br>
