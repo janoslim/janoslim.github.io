@@ -19,7 +19,7 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Computer Sci
 ## Publications
 
 1. <b>SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</b><br>
-Suhyun Lee, <b>Chaemin Lim</b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim<<br>
+Suhyun Lee, <b>Chaemin Lim</b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim<br>
 <i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025 (to appear)<br>
         
 2. <b><a href="https://arxiv.org/abs/2404.08871">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></b><br>
