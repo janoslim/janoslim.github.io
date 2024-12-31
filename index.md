@@ -57,11 +57,10 @@ Junguk Hong, Si Ung Noh, Seongyeon Park, and <b>Chaemin Lim</b>
 
 ## Education
 
-* [2023 - Current] PhD Student at the Department of Computer Science at Yonsei University
+* [2023 - ] PhD Student at the Department of Computer Science at Yonsei University
 * [2021 - 2023] MSc in Artificial Intelligence at Yonsei University
-* [2017 - 2021] BEng in Computer Engineering at Hankuk University of Foreign Studies (Double Major)
+* [2019 - 2021] BEng in Computer Engineering at Hankuk University of Foreign Studies (Double Major)
 * [2017 - 2021] BA in Journalism at Hankuk University of Foreign Studies
 
 ## Interests
-* The more faster database shall make you prosper.
 * I believe that all useful computational devices ever created are capable of <a href="https://www.reddit.com/r/itrunsdoom/">running DOOM</a>. 
