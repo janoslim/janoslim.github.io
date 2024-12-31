@@ -24,7 +24,7 @@ Suhyun Lee, <b>Chaemin Lim</b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park
 <i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025<br>
         
 2. <b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10609669">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></b><br>
-Si Ung Noh<small><sup>1</sup></small>, Junguk Hong<small><sup>1</sup></small>, <b>Chaemin Lim</b>, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee</a><br>
+Si Ung Noh<small><sup>1</sup></small>, Junguk Hong<small><sup>1</sup></small>, <b>Chaemin Lim</b>, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee<br>
 <i>51st IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June&ndash;July 2024<br>
 <small><sup>1</sup>Co-first authors</small><br>
 
