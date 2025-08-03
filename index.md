@@ -18,7 +18,7 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Computer Sci
  
 ## Publications
 
-1. <b><a>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</a></b>
+1. <b><a>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</a></b><br>
 Chaemin Lim, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim<be>
 <i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025 (to appear)<be>
 
