@@ -18,9 +18,9 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Computer Sci
  
 ## Publications
 
-1. <b><a>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</a></b><br>
+1. <b>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</b><br>
 **Chaemin Lim**, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim<br>
-<i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025 (to appear)<be>
+<i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025 (to appear)<br>
 
 2. <b><a href="https://dl.acm.org/doi/abs/10.1145/3698827">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</a></b> <a href="https://github.com/yonsei-hpcp/spid-join">[GitHub]</a><br>
 Suhyun Lee, <b>Chaemin Lim</b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim<br>
