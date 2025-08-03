@@ -18,20 +18,24 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Computer Sci
  
 ## Publications
 
-1. <b><a href="https://dl.acm.org/doi/abs/10.1145/3698827">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</a></b> <a href="https://github.com/yonsei-hpcp/spid-join">[GitHub]</a><br>
+1. <b><a>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</a></b>
+Chaemin Lim, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim<be>
+<i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025 (to appear)<be>
+
+2. <b><a href="https://dl.acm.org/doi/abs/10.1145/3698827">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</a></b> <a href="https://github.com/yonsei-hpcp/spid-join">[GitHub]</a><br>
 Suhyun Lee, <b>Chaemin Lim</b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim<br>
 <i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025<br>
         
-2. <b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10609669">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></b> <a href="https://github.com/AIS-SNU/PID-Comm">[GitHub]</a><br>
+3. <b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10609669">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></b> <a href="https://github.com/AIS-SNU/PID-Comm">[GitHub]</a><br>
 Si Ung Noh<small><sup>1</sup></small>, Junguk Hong<small><sup>1</sup></small>, <b>Chaemin Lim</b>, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee<br>
 <i>51st IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June&ndash;July 2024<br>
 <small><sup>1</sup>Co-first authors</small><br>
 
-3. <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b> <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a><br>
+4. <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b> <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a><br>
 <b>Chaemin Lim</b>, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim<br>
 <i>2023 ACM SIGMOD International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023<br>
 
-4. <b><a href="https://dl.acm.org/doi/10.1145/3528535.3531513">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></b><br>
+5. <b><a href="https://dl.acm.org/doi/10.1145/3528535.3531513">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></b><br>
 Jinwoo Choi<small><sup>1</sup></small>, Jaeyeon Kim<small><sup>1</sup></small>, <b>Chaemin Lim<small><sup>1</sup></small></b>, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim<br>
 <i>23rd ACM/IFIP International Middleware Conference (<b>Middleware</b>)</i>, Nov. 2022 <br>
 <small><sup>1</sup>Co-first authors</small><br>
