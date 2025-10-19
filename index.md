@@ -58,6 +58,10 @@ Junguk Hong, Si Ung Noh, Seongyeon Park, and <b>Chaemin Lim</b>
 2. <b>STACK: Smart, Attack-Resistant Internet of Things Networks</b><br>
 <i>Korea Institute for Advancement of Technology (KIAT)</i><br>
 
+## Employment
+
+* [Aug, 2025 - ] System Architect Intern @ Mangoboost
+
 ## Education
 
 * [2023 - ] PhD Student at the Department of Computer Science at Yonsei University
