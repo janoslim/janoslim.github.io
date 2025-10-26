@@ -18,6 +18,11 @@ Hi! I am Chaemin Lim, currently a Ph.D student in the Department of Computer Sci
  
 ## Publications
 
+<li>
+    	<b>FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables</b><br>
+    	**Chaemin Lim**, Suhyun Lee, Jinwoo Choi, Kwanghyun Park, Jinho Lee, Joonsung Kim, and Youngsok Kim<br>
+    	<i>42nd IEEE International Conference on Data Engineering (<b>ICDE</b>)</i>, May 2026 (to appear)<br>
+
 1. <b>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</b><br>
 **Chaemin Lim**, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim<br>
 <i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025 (to appear)<br>
