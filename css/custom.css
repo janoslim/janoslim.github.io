@@ -9,7 +9,7 @@ h6 {
   font-size: 1.1rem;
   margin: 1.5rem 0 0 0;
   font-weight: bold;
-  color: var(--base09);
+  color: var(--base05);
   /* font-family: "JetBrains Mono"; */
   /* color: var(--base0D); */
 }
@@ -49,7 +49,46 @@ blockquote {
 
 /* inline paragraph code blocks + some color */
 p > code {
-  color: var(--base09);
+  color: var(--base05);
+}
+
+.page__logo-inner {
+  background: var(--base05);
+  color: var(--base00);
+}
+
+.page__logo-inner:before,
+.page__logo-inner:after,
+.page__logo {
+  color: var(--base00);
+}
+
+.active,
+.content__header h1,
+.about__title,
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  color: var(--base05);
+}
+
+.highlight pre {
+  background-color: var(--base01) !important;
+}
+
+.highlight pre,
+.highlight pre code,
+.highlight pre code span,
+.highlight span[style] {
+  color: var(--base05) !important;
+  background-color: var(--base01) !important;
+}
+
+.highlight span[style] {
+  color: inherit !important;
 }
 
 /* JetBrainsMono font */
