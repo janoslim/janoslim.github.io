@@ -1,118 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chaemin Lim</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="generator" content="Hugo 0.139.0">
+    <title>chaemin-lab</title>
+    <meta name="description" content="Chaemin Lim - database and systems research page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/palettes/gruvbox-dark.css">
+    <link rel="stylesheet" href="css/risotto.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
   </head>
-  <body class="crt">
-    <div class="noise"></div>
-    <main class="shell">
-      <header class="topbar">
-        <div class="prompt">$ whoami</div>
-        <h1 class="brand">chaemin<span class="dot">.</span>dev</h1>
-        <p class="tag">PhD Student · Yonsei University HPCP Lab</p>
-        <nav class="nav">
-          <a href="index.html" aria-current="page">about</a>
-          <a href="resume/">resume</a>
-          <a href="contact/">contact</a>
-          <a href="https://janoslim.github.io/CV.pdf" target="_blank" rel="noopener">CV.pdf</a>
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <nav class="page__nav main-nav">
+          <ul>
+            <h1 class="page__logo"><a href="/" class="page__logo-inner">chaemin-lab</a></h1>
+            <li class="main-nav__item"><a class="nav-main-item" href="/">about</a></li>
+            <li class="main-nav__item"><a class="nav-main-item" href="/about/">about me</a></li>
+            <li class="main-nav__item"><a class="nav-main-item" href="/resume/">resume</a></li>
+            <li class="main-nav__item"><a class="nav-main-item" href="/contact/">contact</a></li>
+            <li class="main-nav__item"><a class="nav-main-item" href="CV.pdf">CV.pdf</a></li>
+          </ul>
         </nav>
       </header>
-
-      <section class="panel">
-        <p class="prompt">~$ cat profile.txt</p>
-        <img class="avatar" src="chaemin.png" alt="Chaemin Lim avatar" />
-        <h2>Hi, I'm Chaemin Lim</h2>
-        <p>
-          Hi! I am a Ph.D student in the Department of Computer Science at Yonsei University, advised by
-          <a href="https://hpcp.yonsei.ac.kr/~youngsok/" target="_blank" rel="noopener">Prof. Youngsok Kim</a>.
-        </p>
-        <p>
-          <strong>Email</strong>: <a href="mailto:cmlim@yonsei.ac.kr">cmlim@yonsei.ac.kr</a><br />
-          <strong>Lab</strong>: <a href="https://hpcp.yonsei.ac.kr/" target="_blank" rel="noopener">HPCP Lab</a><br />
-          <strong>Profiles</strong>:
-          <a href="https://www.linkedin.com/in/chaemin-lim-038843263/" target="_blank" rel="noopener">LinkedIn</a>,
-          <a href="https://github.com/janoslim" target="_blank" rel="noopener">GitHub</a>
-        </p>
+      <section class="page__body">
+        <h1 id="chaemin-lab">chaemin-lab</h1>
+        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span></span><span style="display:flex;"><span><span style="color:#75715e"></span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {</span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Hi, I'm Chaemin!&#34;</span>);</span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;</span><span style="display:flex;"><span>}</span></code></pre></div>
+        <p>I&rsquo;m a Ph.D. student at <a href="https://hpcp.yonsei.ac.kr/">Yonsei University</a> working on database systems, query-processing, and new hardware platforms.</p>
+        <h1>~/quick-links</h1>
+        <br />
+        <li><a href="/about/">About</a></li>
+        <li><a href="/resume/">Resume</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/CV.pdf">CV PDF</a></li>
       </section>
-
-      <section class="panel">
-        <p class="prompt">~$ cat interests.md</p>
-        <h2>Research Interest</h2>
-        <p>Database systems on modern hardware / database acceleration / hardware-aware query processing</p>
+      <section class="page__aside">
+        <div class="aside__about">
+          <div class="aside__about">
+            <img class="about__logo" src="author.png" alt="Chaemin avatar">
+            <br />
+            <h1 class="about__title">chaemin-lab</h1>
+            <p class="about__description">Database systems + hardware-aware acceleration</p>
+          </div>
+          <ul class="aside__social-links">
+            <li><a href="https://github.com/janoslim" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;</li>
+            <li><a href="mailto:cmlim@yonsei.ac.kr" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;</li>
+            <li><a href="https://www.linkedin.com/in/chaemin-lim-038843263/" rel="me" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>&nbsp;</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="aside__content"></div>
       </section>
-
-      <section class="panel">
-        <p class="prompt">~$ cat education.txt</p>
-        <h2>Education</h2>
-        <ul class="timeline">
-          <li><span>[2023 - ]</span> PhD Student, Dept. of Computer Science, Yonsei University</li>
-          <li><span>[2021 - 2023]</span> MSc in Artificial Intelligence, Yonsei University</li>
-          <li><span>[2019 - 2021]</span> BEng in Computer Engineering, HUFS (Double Major)</li>
-          <li><span>[2017 - 2021]</span> BA in Journalism, HUFS</li>
-        </ul>
-      </section>
-
-      <section class="panel">
-        <p class="prompt">~$ ls projects/</p>
-        <h2>Projects</h2>
-        <ul>
-          <li>Development of New Concept PIM Semiconductor Leading Technology (IITP)</li>
-          <li>STACK: Smart, Attack-Resistant Internet of Things Networks (KIAT)</li>
-          <li>System Architect Intern @ Mangoboost (Aug 2025 - )</li>
-        </ul>
-      </section>
-
-      <section class="panel">
-        <p class="prompt">~$ ls publications/</p>
-        <h2>Publications</h2>
-        <ol>
-          <li>
-            <strong>FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables</strong>
-            (ICDE 2026)
-            <a href="https://github.com/yonsei-hpcp/fascalsql" target="_blank" rel="noopener">[GitHub]</a>
-          </li>
-          <li>
-            <strong><a href="https://ieeexplore.ieee.org/document/11282501" target="_blank" rel="noopener">DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</a></strong>
-            (PACT 2025)
-          </li>
-          <li>
-            <strong><a href="https://dl.acm.org/doi/abs/10.1145/3698827" target="_blank" rel="noopener">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</a></strong>
-            (SIGMOD 2025)
-            <a href="https://github.com/yonsei-hpcp/spid-join" target="_blank" rel="noopener">[GitHub]</a>
-          </li>
-          <li>
-            <strong><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10609669" target="_blank" rel="noopener">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></strong>
-            (ISCA 2024)
-            <a href="https://github.com/AIS-SNU/PID-Comm" target="_blank" rel="noopener">[GitHub]</a>
-          </li>
-          <li>
-            <strong><a href="https://doi.org/10.1145/3589258" target="_blank" rel="noopener">Design and Analysis of a Processing-in-DIMM Join Algorithm</a></strong>
-            (SIGMOD 2023)
-            <a href="https://github.com/yonsei-hpcp/pid-join" target="_blank" rel="noopener">[GitHub]</a>
-          </li>
-          <li>
-            <strong><a href="https://dl.acm.org/doi/10.1145/3528535.3531513" target="_blank" rel="noopener">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></strong>
-            (Middleware 2022)
-          </li>
-        </ol>
-      </section>
-
-      <section class="panel">
-        <p class="prompt">~$ cat awards.log</p>
-        <h2>Awards & Talks</h2>
-        <ul>
-          <li>2024 Encouragement Prize @ Samsung Humantech Paper Awards</li>
-          <li>ABUMPIMP EUROPAR 2023 invited talk on PIM join on UPMEM DIMMs</li>
-        </ul>
-      </section>
-
-      <footer>
-        <p>© <span id="year"></span> chaemin-lab</p>
+      <footer class="page__footer">
+        <p><br/><span class="active">$ echo $LANG<br/><b></b></span><br/></p>
+        <br /><br />
+        <p class="copyright">© <a href="https://github.com/janoslim">janoslim</a></p>
+        <p class="advertisement">Built on the <a href="https://github.com/sweetbbak/sweetbbak.github.io">sweetbbak.github.io</a> design.</p>
       </footer>
-    </main>
-    <script src="script.js"></script>
+    </div>
   </body>
 </html>
