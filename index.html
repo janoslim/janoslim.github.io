@@ -34,42 +34,17 @@
       <section class="page__body">
         <h1 id="chaemin-lim">chaemin-lim</h1>
         <div class="highlight"><pre tabindex="0"><code class="language-sql" data-lang="sql">chaemin=# \d researcher
-                  Table "public.researcher"
-   Column    |     Type     |        Description
--------------+--------------+----------------------------
- name        | text         | Chaemin Lim
- affiliation | text         | Yonsei University, HPCP Lab
- advisor     | text         | Prof. Youngsok Kim
- focus       | text[]       | { database systems,
-             |              |   query processing,
-             |              |   PIM / GPU acceleration }
- status      | text         | Ph.D. student (2023 - )
-
-chaemin=# SELECT 'hello' AS greeting;
- greeting
-----------
- hello
-(1 row)
+            Table "public.researcher"
+   Column    | Type | Value
+-------------+------+-----------------------------------------
+ name        | text | Chaemin Lim
+ affiliation | text | Yonsei University, HPCP Lab
+ advisor     | text | Prof. Youngsok Kim
+ focus       | text | databases on modern hardware (GPU / PIM)
+ status      | text | Ph.D. student (2023 - )
+(5 rows)
 </code></pre></div>
         <p>I&rsquo;m a Ph.D. student at <a href="https://hpcp.yonsei.ac.kr/">Yonsei University</a> / HPCP Lab, working on database systems on modern hardware &mdash; GPU- and PIM-accelerated query engines, join algorithms, and the systems plumbing around them.</p>
-
-        <h1>~/recent-work</h1>
-        <ul>
-          <li><b>FaScalSQL</b> (ICDE 2026) &mdash; GPU SQL engine for out-of-memory tables. <a href="https://github.com/yonsei-hpcp/fascalsql">[GitHub]</a></li>
-          <li><b>DMO-DB</b> (PACT 2025) &mdash; data-movement bottlenecks in GPU OLAP. <a href="https://ieeexplore.ieee.org/document/11282501">[Paper]</a></li>
-          <li><b>SPID-Join</b> (SIGMOD 2025) &mdash; skew-resistant PIM join. <a href="https://dl.acm.org/doi/abs/10.1145/3698827">[Paper]</a> <a href="https://github.com/yonsei-hpcp/spid-join">[GitHub]</a></li>
-          <li><b>PID-Comm</b> (ISCA 2024) &mdash; collective comm. for PIM. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10609669">[Paper]</a> <a href="https://github.com/AIS-SNU/PID-Comm">[GitHub]</a></li>
-          <li><b>PID-Join</b> (SIGMOD 2023) &mdash; UPMEM-DIMM join algorithm. <a href="https://doi.org/10.1145/3589258">[Paper]</a> <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a></li>
-        </ul>
-
-        <h1>~/quick-links</h1>
-        <ul>
-          <li><a href="/about/">About &amp; full publication list</a></li>
-          <li><a href="/resume/">Resume</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/CV.pdf">CV (PDF)</a></li>
-          <li><a href="https://github.com/janoslim">GitHub</a></li>
-        </ul>
       </section>
       <section class="page__aside">
         <div class="aside__about">
