@@ -1,0 +1,234 @@
+:root {
+  --bg: #04060e;
+  --panel: #090d17;
+  --panel-soft: #0b111f;
+  --border: #2d6f2d;
+  --text: #d9ffb4;
+  --muted: #79af64;
+  --accent: #53ff74;
+  --warn: #ffcb57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #030a12, #050910 45%, #030a12 90%);
+  color: var(--text);
+  font-family: "Courier New", "Liberation Mono", "Menlo", monospace;
+  line-height: 1.45;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.scanline {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.015),
+    rgba(255, 255, 255, 0.015) 1px,
+    rgba(255, 255, 255, 0) 1px,
+    rgba(255, 255, 255, 0) 3px
+  );
+  z-index: 2;
+  mix-blend-mode: screen;
+}
+
+.terminal {
+  border: 1px solid var(--border);
+  background: linear-gradient(to bottom, #0b111a, var(--panel));
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.status-row {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.blink {
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 0.4rem;
+  animation: blink 1.1s steps(1, end) infinite;
+}
+
+.ok {
+  color: var(--accent);
+}
+
+.tabs {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  background: #090f19;
+  flex: 1;
+  text-align: center;
+}
+
+.tab.active,
+.tab:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.panel {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--accent);
+  letter-spacing: 0.03em;
+  margin: 0.75rem 0 0.5rem;
+  text-shadow: 0 0 2px rgba(83, 255, 116, 0.35);
+}
+
+h2 {
+  margin-top: 0.9rem;
+}
+
+a {
+  color: var(--warn);
+}
+
+a:hover {
+  text-shadow: 0 0 8px rgba(255, 203, 87, 0.6);
+}
+
+ul {
+  margin-top: 0.3rem;
+}
+
+.db-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #214020;
+  margin-top: 0.5rem;
+}
+
+.db-table th,
+.db-table td {
+  border: 1px solid #214020;
+  padding: 0.45rem;
+  font-size: 0.92rem;
+  vertical-align: top;
+}
+
+.db-table thead {
+  background: var(--panel-soft);
+}
+
+.prompt {
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.45rem;
+}
+
+.small {
+  color: var(--muted);
+}
+
+.terminal-shell {
+  border: 1px solid #214020;
+  background: #02060d;
+  padding: 0.6rem;
+}
+
+.terminal-log {
+  max-height: 240px;
+  overflow: auto;
+  padding: 0.3rem;
+  background: #02060d;
+  border: 1px dashed #3d6648;
+  margin-bottom: 0.6rem;
+}
+
+.terminal-log div {
+  margin: 0.2rem 0;
+  white-space: pre-wrap;
+}
+
+form {
+  margin: 0;
+}
+
+label {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+label span {
+  color: var(--warn);
+  white-space: nowrap;
+}
+
+input {
+  flex: 1;
+  border: 1px dashed #3d6648;
+  background: #03070f;
+  color: var(--text);
+  padding: 0.45rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+input:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.result {
+  color: #d2ffea;
+}
+
+.row-green {
+  color: var(--accent);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .db-table th,
+  .db-table td {
+    font-size: 0.82rem;
+  }
+}
