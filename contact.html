@@ -6,34 +6,41 @@
     <title>contact / chaemin-lab</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="scanline"></div>
-    <main class="page">
-      <header class="terminal">
-        <div class="status-row">
-          <span class="blink">_</span>
-          <span class="status-text">chaemin@yonsei-hpcp$</span>
-        </div>
-        <div class="status-row">viewing: contact.txt</div>
+  <body class="crt">
+    <div class="noise"></div>
+    <main class="shell">
+      <header class="topbar">
+        <div class="prompt">$ cat contact.txt</div>
+        <h1 class="brand">chaemin<span class="dot">.</span>dev</h1>
+        <p class="tag">Contact Information</p>
+        <nav class="nav">
+          <a href="index.html">about</a>
+          <a href="resume/">resume</a>
+          <a href="contact/" aria-current="page">contact</a>
+          <a href="https://janoslim.github.io/CV.pdf" target="_blank" rel="noopener">CV.pdf</a>
+        </nav>
       </header>
 
-      <nav class="tabs">
-        <a href="index.html" class="tab">About</a>
-        <a href="resume/" class="tab">Resume</a>
-        <a href="contact/" class="tab active">Contact</a>
-      </nav>
-
       <section class="panel">
-        <h1>Contact</h1>
+        <p class="prompt">~$ cat profile.txt</p>
+        <h2>Contact</h2>
         <p>Email: <a href="mailto:cmlim@yonsei.ac.kr">cmlim@yonsei.ac.kr</a></p>
-        <p>Mailing address: D711, 4th Engineering Hall, Yonsei-ro 50, Seodaemun-gu, Seoul, South Korea</p>
+        <p>Mailing address</p>
+        <pre>
+D711, 4th Engineering Hall
+Yonsei-ro 50
+Seodaemun-gu, Seoul, South Korea
+        </pre>
       </section>
 
       <section class="panel">
-        <h2>Direct Link</h2>
-        <p>Profile page: <a href="index.html">/about</a></p>
-        <p>Resume: <a href="resume/">/resume</a> | PDF <a href="https://janoslim.github.io/CV.pdf">CV.pdf</a></p>
+        <p class="prompt">~$ tree .</p>
+        <h2>Quick Links</h2>
+        <p>about: <a href="index.html">/about</a></p>
+        <p>resume: <a href="resume/">/resume</a></p>
+        <p>CV: <a href="https://janoslim.github.io/CV.pdf">/CV.pdf</a></p>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

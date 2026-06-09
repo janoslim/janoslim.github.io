@@ -6,62 +6,67 @@
     <title>resume / chaemin-lab</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="scanline"></div>
-    <main class="page">
-      <header class="terminal">
-        <div class="status-row">
-          <span class="blink">_</span>
-          <span class="status-text">chaemin@yonsei-hpcp$</span>
-        </div>
-        <div class="status-row">viewing: resume.md</div>
+  <body class="crt">
+    <div class="noise"></div>
+    <main class="shell">
+      <header class="topbar">
+        <div class="prompt">$ cat resume.md</div>
+        <h1 class="brand">chaemin<span class="dot">.</span>dev</h1>
+        <p class="tag">Resume / CV</p>
+        <nav class="nav">
+          <a href="index.html">about</a>
+          <a href="resume/" aria-current="page">resume</a>
+          <a href="contact/">contact</a>
+          <a href="https://janoslim.github.io/CV.pdf" target="_blank" rel="noopener">CV.pdf</a>
+        </nav>
       </header>
 
-      <nav class="tabs">
-        <a href="index.html" class="tab">About</a>
-        <a href="resume/" class="tab active">Resume</a>
-        <a href="contact/" class="tab">Contact</a>
-      </nav>
-
       <section class="panel">
-        <h1>Resume / CV</h1>
+        <p class="prompt">~$ ls</p>
+        <h2>Resume / CV</h2>
         <p>Complete resume PDF: <a href="https://janoslim.github.io/CV.pdf" target="_blank" rel="noopener">CV.pdf</a></p>
       </section>
 
       <section class="panel">
+        <p class="prompt">~$ cat education.txt</p>
+        <h2>Education</h2>
+        <ul class="timeline">
+          <li><span>[2023 - ]</span> PhD Student, Dept. of Computer Science, Yonsei University</li>
+          <li><span>[2021 - 2023]</span> MSc in Artificial Intelligence, Yonsei University</li>
+          <li><span>[2019 - 2021]</span> BEng in Computer Engineering, HUFS (Double Major)</li>
+          <li><span>[2017 - 2021]</span> BA in Journalism, HUFS</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <p class="prompt">~$ cat interest.md</p>
         <h2>Research Interests</h2>
         <ul>
-          <li>Database/Operating Systems on Modern Hardware</li>
-          <li>Hardware/Software Co-optimization</li>
-          <li>Concurrent Computing</li>
-          <li>Heterogeneous Computing</li>
+          <li>Database / OS systems on modern hardware</li>
+          <li>Hardware-software co-design and query processing acceleration</li>
+          <li>Concurrent computing and lock-free data structures</li>
+          <li>Heterogeneous computing platforms</li>
         </ul>
       </section>
 
       <section class="panel">
-        <h2>Selected Education</h2>
+        <p class="prompt">~$ cat experience.log</p>
+        <h2>Experience</h2>
         <ul>
-          <li>Yonsei University: PhD Student / MSc, Artificial Intelligence (2021-2023)</li>
-          <li>Hankuk University of Foreign Studies: B.Eng. Computer Engineering / B.A. Journalism (2017-2021)</li>
+          <li>System Architect Intern @ Mangoboost (Aug 2025 - )</li>
+          <li>Teaching Assistant: Logic Circuit Design (CSI2111), Open Source Projects (CSI2115), Information Security (CSI4109)</li>
         </ul>
       </section>
 
       <section class="panel">
-        <h2>Teaching Experience</h2>
-        <ul>
-          <li>Logic Circuit Design (CSI2111): TA, Fall 2022</li>
-          <li>Open Source Projects (CSI2115): TA, Fall 2021</li>
-          <li>Information Security (CSI4109): TA, Spring 2021</li>
-        </ul>
-      </section>
-
-      <section class="panel">
+        <p class="prompt">~$ cat stack.txt</p>
         <h2>Technical Stack</h2>
         <ul>
           <li>C, C++, Python, Verilog</li>
-          <li>Hardware and database system optimization, parallel systems, compiler-level data-path tuning</li>
+          <li>CUDA, database optimizer design, compiler-level systems tuning, PIM/heterogeneous systems</li>
         </ul>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

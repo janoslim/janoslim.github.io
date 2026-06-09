@@ -3,113 +3,105 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>chaemin-lab / db-console</title>
+    <title>Chaemin Lim</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="scanline"></div>
-    <main class="page">
-      <header class="terminal">
-        <div class="status-row">
-          <span class="blink">_</span>
-          <span class="status-text">chaemin@yonsei-hpcp$</span>
-        </div>
-        <div class="status-row">db-console.booting... <span class="ok">ok</span></div>
-        <div class="status-row">mode: pull-based-operator-scheduling</div>
+  <body class="crt">
+    <div class="noise"></div>
+    <main class="shell">
+      <header class="topbar">
+        <div class="prompt">$ whoami</div>
+        <h1 class="brand">chaemin<span class="dot">.</span>dev</h1>
+        <p class="tag">PhD Student · Yonsei University HPCP Lab</p>
+        <nav class="nav">
+          <a href="index.html" aria-current="page">about</a>
+          <a href="resume/">resume</a>
+          <a href="contact/">contact</a>
+          <a href="https://janoslim.github.io/CV.pdf" target="_blank" rel="noopener">CV.pdf</a>
+        </nav>
       </header>
 
-      <nav class="tabs">
-        <a href="index.html" class="tab active">About</a>
-        <a href="resume/" class="tab">Resume</a>
-        <a href="contact/" class="tab">Contact</a>
-      </nav>
-
       <section class="panel">
-        <div class="prompt">query&gt; cat profile.txt</div>
-        <h1>Chaemin Lim</h1>
-        <p><strong>HPCP Lab</strong> @ Yonsei University</p>
-        <p>Advisor: Prof. Youngsok Kim</p>
-        <p>Email: <a href="mailto:cmlim@yonsei.ac.kr">cmlim@yonsei.ac.kr</a></p>
+        <p class="prompt">~$ cat profile.txt</p>
+        <img class="avatar" src="chaemin.png" alt="Chaemin Lim avatar" />
+        <h2>Hi, I'm Chaemin Lim</h2>
         <p>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-          |
+          Hi! I am a Ph.D student in the Department of Computer Science at Yonsei University, advised by
+          <a href="https://hpcp.yonsei.ac.kr/~youngsok/" target="_blank" rel="noopener">Prof. Youngsok Kim</a>.
+        </p>
+        <p>
+          <strong>Email</strong>: <a href="mailto:cmlim@yonsei.ac.kr">cmlim@yonsei.ac.kr</a><br />
+          <strong>Lab</strong>: <a href="https://hpcp.yonsei.ac.kr/" target="_blank" rel="noopener">HPCP Lab</a><br />
+          <strong>Profiles</strong>:
+          <a href="https://www.linkedin.com/in/chaemin-lim-038843263/" target="_blank" rel="noopener">LinkedIn</a>,
           <a href="https://github.com/janoslim" target="_blank" rel="noopener">GitHub</a>
         </p>
+      </section>
 
+      <section class="panel">
+        <p class="prompt">~$ cat interests.md</p>
         <h2>Research Interest</h2>
-        <p>Database Acceleration using Modern Hardware</p>
+        <p>Database systems on modern hardware / database acceleration / hardware-aware query processing</p>
+      </section>
 
+      <section class="panel">
+        <p class="prompt">~$ cat education.txt</p>
+        <h2>Education</h2>
+        <ul class="timeline">
+          <li><span>[2023 - ]</span> PhD Student, Dept. of Computer Science, Yonsei University</li>
+          <li><span>[2021 - 2023]</span> MSc in Artificial Intelligence, Yonsei University</li>
+          <li><span>[2019 - 2021]</span> BEng in Computer Engineering, HUFS (Double Major)</li>
+          <li><span>[2017 - 2021]</span> BA in Journalism, HUFS</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <p class="prompt">~$ ls projects/</p>
         <h2>Projects</h2>
         <ul>
           <li>Development of New Concept PIM Semiconductor Leading Technology (IITP)</li>
           <li>STACK: Smart, Attack-Resistant Internet of Things Networks (KIAT)</li>
           <li>System Architect Intern @ Mangoboost (Aug 2025 - )</li>
         </ul>
-
-        <h2>Education</h2>
-        <ul>
-          <li>[2023 - ] PhD Student, Department of Computer Science, Yonsei University</li>
-          <li>[2021 - 2023] MSc in Artificial Intelligence, Yonsei University</li>
-          <li>[2019 - 2021] BEng in Computer Engineering, HUFS (Double Major)</li>
-          <li>[2017 - 2021] BA in Journalism, HUFS</li>
-        </ul>
       </section>
 
       <section class="panel">
-        <div class="prompt">query&gt; select * from publications</div>
+        <p class="prompt">~$ ls publications/</p>
         <h2>Publications</h2>
-        <table class="db-table" id="pub-table">
-          <thead>
-            <tr>
-              <th>YEAR</th>
-              <th>TITLE</th>
-              <th>VENUE</th>
-              <th>LINKS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2026</td>
-              <td>FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables</td>
-              <td>ICDE 2026</td>
-              <td><a href="https://github.com/yonsei-hpcp/fascalsql" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>2025</td>
-              <td>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</td>
-              <td>PACT 2025</td>
-              <td><a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener">IEEE Xplore</a></td>
-            </tr>
-            <tr>
-              <td>2025</td>
-              <td>SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</td>
-              <td>SIGMOD 2025</td>
-              <td><a href="https://dl.acm.org" target="_blank" rel="noopener">ACM DL</a> | <a href="https://github.com/yonsei-hpcp/spid-join" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>2024</td>
-              <td>PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</td>
-              <td>ISCA 2024</td>
-              <td><a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener">IEEE Xplore</a> | <a href="https://github.com/AIS-SNU/PID-Comm" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</td>
-              <td>SIGMOD 2023</td>
-              <td><a href="https://doi.org/10.1145/sigmod" target="_blank" rel="noopener">DOI</a> | <a href="https://github.com/yonsei-hpcp/pid-join" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>2022</td>
-              <td>GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</td>
-              <td>Middleware 2022</td>
-              <td><a href="https://dl.acm.org" target="_blank" rel="noopener">ACM DL</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <ol>
+          <li>
+            <strong>FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables</strong>
+            (ICDE 2026)
+            <a href="https://github.com/yonsei-hpcp/fascalsql" target="_blank" rel="noopener">[GitHub]</a>
+          </li>
+          <li>
+            <strong><a href="https://ieeexplore.ieee.org/document/11282501" target="_blank" rel="noopener">DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</a></strong>
+            (PACT 2025)
+          </li>
+          <li>
+            <strong><a href="https://dl.acm.org/doi/abs/10.1145/3698827" target="_blank" rel="noopener">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</a></strong>
+            (SIGMOD 2025)
+            <a href="https://github.com/yonsei-hpcp/spid-join" target="_blank" rel="noopener">[GitHub]</a>
+          </li>
+          <li>
+            <strong><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10609669" target="_blank" rel="noopener">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></strong>
+            (ISCA 2024)
+            <a href="https://github.com/AIS-SNU/PID-Comm" target="_blank" rel="noopener">[GitHub]</a>
+          </li>
+          <li>
+            <strong><a href="https://doi.org/10.1145/3589258" target="_blank" rel="noopener">Design and Analysis of a Processing-in-DIMM Join Algorithm</a></strong>
+            (SIGMOD 2023)
+            <a href="https://github.com/yonsei-hpcp/pid-join" target="_blank" rel="noopener">[GitHub]</a>
+          </li>
+          <li>
+            <strong><a href="https://dl.acm.org/doi/10.1145/3528535.3531513" target="_blank" rel="noopener">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></strong>
+            (Middleware 2022)
+          </li>
+        </ol>
       </section>
 
       <section class="panel">
-        <div class="prompt">query&gt; select * from highlights</div>
+        <p class="prompt">~$ cat awards.log</p>
         <h2>Awards & Talks</h2>
         <ul>
           <li>2024 Encouragement Prize @ Samsung Humantech Paper Awards</li>
@@ -117,27 +109,9 @@
         </ul>
       </section>
 
-      <section class="panel">
-        <h2>Interactive Console</h2>
-        <p class="small">
-          Old-school query prompt (toy parser). Type one of:
-          <code>help</code>, <code>select * from publications</code>,
-          <code>select * from publications where year >= 2025</code>,
-          <code>select * from publications where venue contains SIGMOD</code>,
-          <code>plan</code>, <code>clear</code>.
-        </p>
-        <div class="terminal-shell">
-          <div id="terminal-log" class="terminal-log">
-            <div>> DB console initialized. Input query and press Enter.</div>
-          </div>
-          <form id="query-form" autocomplete="off">
-            <label>
-              <span>db&gt;</span>
-              <input id="query-input" type="text" placeholder="enter query..." />
-            </label>
-          </form>
-        </div>
-      </section>
+      <footer>
+        <p>© <span id="year"></span> chaemin-lab</p>
+      </footer>
     </main>
     <script src="script.js"></script>
   </body>
