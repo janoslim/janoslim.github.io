@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="generator" content="Hugo 0.139.0">
-    <title>chaemin-lab</title>
+    <title>chaemin-lim</title>
     <meta name="description" content="Chaemin Lim - database and systems research page.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8"/>
@@ -22,9 +22,9 @@
       <header class="page__header">
         <nav class="page__nav main-nav">
           <ul>
-            <h1 class="page__logo"><a href="/" class="page__logo-inner">chaemin-lab</a></h1>
-            <li class="main-nav__item"><a class="nav-main-item" href="/">about</a></li>
-            <li class="main-nav__item"><a class="nav-main-item" href="/about/">about me</a></li>
+            <h1 class="page__logo"><a href="/" class="page__logo-inner">chaemin-lim</a></h1>
+            <li class="main-nav__item"><a class="nav-main-item" href="/">home</a></li>
+            <li class="main-nav__item"><a class="nav-main-item" href="/about/">about</a></li>
             <li class="main-nav__item"><a class="nav-main-item" href="/resume/">resume</a></li>
             <li class="main-nav__item"><a class="nav-main-item" href="/contact/">contact</a></li>
             <li class="main-nav__item"><a class="nav-main-item" href="CV.pdf">CV.pdf</a></li>
@@ -32,22 +32,51 @@
         </nav>
       </header>
       <section class="page__body">
-        <h1 id="chaemin-lab">chaemin-lab</h1>
-        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span></span><span style="display:flex;"><span><span style="color:#75715e"></span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {</span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Hi, I'm Chaemin!&#34;</span>);</span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;</span><span style="display:flex;"><span>}</span></code></pre></div>
-        <p>I&rsquo;m a Ph.D. student at <a href="https://hpcp.yonsei.ac.kr/">Yonsei University</a> working on database systems, query-processing, and new hardware platforms.</p>
+        <h1 id="chaemin-lim">chaemin-lim</h1>
+        <div class="highlight"><pre tabindex="0"><code class="language-sql" data-lang="sql">chaemin=# \d researcher
+                  Table "public.researcher"
+   Column    |     Type     |        Description
+-------------+--------------+----------------------------
+ name        | text         | Chaemin Lim
+ affiliation | text         | Yonsei University, HPCP Lab
+ advisor     | text         | Prof. Youngsok Kim
+ focus       | text[]       | { database systems,
+             |              |   query processing,
+             |              |   PIM / GPU acceleration }
+ status      | text         | Ph.D. student (2023 - )
+
+chaemin=# SELECT 'hello' AS greeting;
+ greeting
+----------
+ hello
+(1 row)
+</code></pre></div>
+        <p>I&rsquo;m a Ph.D. student at <a href="https://hpcp.yonsei.ac.kr/">Yonsei University</a> / HPCP Lab, working on database systems on modern hardware &mdash; GPU- and PIM-accelerated query engines, join algorithms, and the systems plumbing around them.</p>
+
+        <h1>~/recent-work</h1>
+        <ul>
+          <li><b>FaScalSQL</b> (ICDE 2026) &mdash; GPU SQL engine for out-of-memory tables. <a href="https://github.com/yonsei-hpcp/fascalsql">[GitHub]</a></li>
+          <li><b>DMO-DB</b> (PACT 2025) &mdash; data-movement bottlenecks in GPU OLAP. <a href="https://ieeexplore.ieee.org/document/11282501">[Paper]</a></li>
+          <li><b>SPID-Join</b> (SIGMOD 2025) &mdash; skew-resistant PIM join. <a href="https://dl.acm.org/doi/abs/10.1145/3698827">[Paper]</a> <a href="https://github.com/yonsei-hpcp/spid-join">[GitHub]</a></li>
+          <li><b>PID-Comm</b> (ISCA 2024) &mdash; collective comm. for PIM. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10609669">[Paper]</a> <a href="https://github.com/AIS-SNU/PID-Comm">[GitHub]</a></li>
+          <li><b>PID-Join</b> (SIGMOD 2023) &mdash; UPMEM-DIMM join algorithm. <a href="https://doi.org/10.1145/3589258">[Paper]</a> <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a></li>
+        </ul>
+
         <h1>~/quick-links</h1>
-        <br />
-        <li><a href="/about/">About</a></li>
-        <li><a href="/resume/">Resume</a></li>
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/CV.pdf">CV PDF</a></li>
+        <ul>
+          <li><a href="/about/">About &amp; full publication list</a></li>
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/CV.pdf">CV (PDF)</a></li>
+          <li><a href="https://github.com/janoslim">GitHub</a></li>
+        </ul>
       </section>
       <section class="page__aside">
         <div class="aside__about">
           <div class="aside__about">
             <img class="about__logo" src="author.png" alt="Chaemin avatar">
             <br />
-            <h1 class="about__title">chaemin-lab</h1>
+            <h1 class="about__title">chaemin-lim</h1>
             <p class="about__description">Database systems + hardware-aware acceleration</p>
           </div>
           <ul class="aside__social-links">
@@ -60,7 +89,7 @@
         <div class="aside__content"></div>
       </section>
       <footer class="page__footer">
-        <p><br/><span class="active">$ echo $LANG<br/><b></b></span><br/></p>
+        <p><br/><span class="active">chaemin=# \q<br/><b></b></span><br/></p>
         <br /><br />
         <p class="copyright">© <a href="https://github.com/janoslim">janoslim</a></p>
         <p class="advertisement">Built on the <a href="https://github.com/sweetbbak/sweetbbak.github.io">sweetbbak.github.io</a> design.</p>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title>About &ndash; chaemin-lab</title>
+    <title>About &ndash; chaemin-lim</title>
     <meta name="description" content="Chaemin Lim profile">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,9 +17,9 @@
       <header class="page__header">
         <nav class="page__nav main-nav">
           <ul>
-            <h1 class="page__logo"><a href="/" class="page__logo-inner">chaemin-lab</a></h1>
-            <li class="main-nav__item"><a class="nav-main-item" href="/">about</a></li>
-            <li class="main-nav__item"><a class="nav-main-item active" href="/about/">about me</a></li>
+            <h1 class="page__logo"><a href="/" class="page__logo-inner">chaemin-lim</a></h1>
+            <li class="main-nav__item"><a class="nav-main-item" href="/">home</a></li>
+            <li class="main-nav__item"><a class="nav-main-item active" href="/about/">about</a></li>
             <li class="main-nav__item"><a class="nav-main-item" href="/resume/">resume</a></li>
             <li class="main-nav__item"><a class="nav-main-item" href="/contact/">contact</a></li>
             <li class="main-nav__item"><a class="nav-main-item" href="/CV.pdf">CV.pdf</a></li>
@@ -29,39 +29,88 @@
       <section class="page__body">
         <header class="content__header"><h1>About</h1></header>
         <div class="content__body">
-          <p>Hi! I&rsquo;m Chaemin Lim. Ph.D. student at <a href="https://hpcp.yonsei.ac.kr/">Yonsei University</a> / HPCP Lab.</p>
-          <p>Advisor: <a href="https://hpcp.yonsei.ac.kr/~youngsok/">Prof. Youngsok Kim</a>.</p>
-          <p>Research interests:</p>
-          <ul>
-            <li>Database systems on modern hardware</li>
-            <li>Database acceleration and query processing</li>
-            <li>Hardware-aware optimizer/compiler support</li>
-            <li>Concurrent and lock-free data structure design</li>
-          </ul>
+          <p>Hi! I&rsquo;m Chaemin Lim, a Ph.D. student at <a href="https://hpcp.yonsei.ac.kr/">Yonsei University</a> / HPCP Lab, advised by <a href="https://hpcp.yonsei.ac.kr/~youngsok/">Prof. Youngsok Kim</a>.</p>
+          <p>I work on databases close to the metal: query engines, join algorithms, and execution strategies for GPUs and processing-in-memory (PIM) hardware. I care about making analytical workloads stop being bottlenecked by data movement.</p>
 
-          <h2>Education</h2>
+          <h2>Research Interests</h2>
           <ul>
-            <li>[2023 - ] PhD Student, Department of Computer Science, Yonsei University</li>
-            <li>[2021 - 2023] MSc in Artificial Intelligence, Yonsei University</li>
-            <li>[2019 - 2021] BEng in Computer Engineering, HUFS (Double Major)</li>
-            <li>[2017 - 2021] BA in Journalism, HUFS</li>
+            <li>Database acceleration on modern hardware (GPU, PIM, NVMe)</li>
+            <li>Query processing and engine architecture</li>
+            <li>Join algorithms and skew handling</li>
+            <li>Hardware-aware optimizer and compiler support</li>
+            <li>Concurrent and lock-free data structures</li>
           </ul>
 
           <h2>Publications</h2>
           <ol>
-            <li>FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables (ICDE 2026)</li>
-            <li>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP (PACT 2025)</li>
-            <li>SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs (SIGMOD 2025)</li>
-            <li>PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs (ISCA 2024)</li>
-            <li>Design and Analysis of a Processing-in-DIMM Join Algorithm (SIGMOD 2023)</li>
-            <li>GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware (Middleware 2022)</li>
+            <li>
+              <b>FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables</b>
+              <a href="https://github.com/yonsei-hpcp/fascalsql">[GitHub]</a><br>
+              <b>Chaemin Lim</b>, Suhyun Lee, Jinwoo Choi, Kwanghyun Park, Jinho Lee, Joonsung Kim, and Youngsok Kim.<br>
+              <i>42nd IEEE International Conference on Data Engineering (<b>ICDE</b>)</i>, May 2026.
+            </li>
+            <li>
+              <b><a href="https://ieeexplore.ieee.org/document/11282501">DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</a></b><br>
+              <b>Chaemin Lim</b>, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim.<br>
+              <i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025.
+            </li>
+            <li>
+              <b><a href="https://dl.acm.org/doi/abs/10.1145/3698827">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</a></b>
+              <a href="https://github.com/yonsei-hpcp/spid-join">[GitHub]</a><br>
+              Suhyun Lee, <b>Chaemin Lim</b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim.<br>
+              <i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025.
+            </li>
+            <li>
+              <b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10609669">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></b>
+              <a href="https://github.com/AIS-SNU/PID-Comm">[GitHub]</a><br>
+              Si Ung Noh<sup>1</sup>, Junguk Hong<sup>1</sup>, <b>Chaemin Lim</b>, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee.<br>
+              <i>51st IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June&ndash;July 2024. <small><sup>1</sup>Co-first authors</small>
+            </li>
+            <li>
+              <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b>
+              <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a><br>
+              <b>Chaemin Lim</b>, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim.<br>
+              <i>2023 ACM SIGMOD International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023.
+            </li>
+            <li>
+              <b><a href="https://dl.acm.org/doi/10.1145/3528535.3531513">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></b><br>
+              Jinwoo Choi<sup>1</sup>, Jaeyeon Kim<sup>1</sup>, <b>Chaemin Lim</b><sup>1</sup>, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim.<br>
+              <i>23rd ACM/IFIP International Middleware Conference (<b>Middleware</b>)</i>, Nov. 2022. <small><sup>1</sup>Co-first authors</small>
+            </li>
           </ol>
 
-          <h2>Projects</h2>
+          <h2>Invited Talks</h2>
           <ul>
-            <li>Development of New Concept PIM Semiconductor Leading Technology (IITP)</li>
-            <li>STACK: Smart, Attack-Resistant Internet of Things Networks (KIAT)</li>
-            <li>System Architect Intern @ Mangoboost (Aug 2025 - )</li>
+            <li><b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023. <a href="https://youtu.be/G_9Zd1EwQ-8?si=sSJNSfTsD_ttAgR-">[YouTube]</a></li>
+          </ul>
+
+          <h2>Awards</h2>
+          <ul>
+            <li>[2024] Encouragement Prize, Samsung Humantech Paper Awards (삼성휴먼테크논문대상) &mdash; "PID-Comm: Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMM Devices" (Junguk Hong, Si Ung Noh, Seongyeon Park, and <b>Chaemin Lim</b>).</li>
+          </ul>
+
+          <h2>Employment</h2>
+          <ul>
+            <li>[Aug 2025 - ] System Architect Intern, <b>Mangoboost</b></li>
+          </ul>
+
+          <h2>Education</h2>
+          <ul>
+            <li>[2023 - ] Ph.D. Student, Department of Computer Science, Yonsei University</li>
+            <li>[2021 - 2023] MSc in Artificial Intelligence, Yonsei University</li>
+            <li>[2019 - 2021] BEng in Computer Engineering, Hankuk University of Foreign Studies (Double Major)</li>
+            <li>[2017 - 2021] BA in Journalism, Hankuk University of Foreign Studies</li>
+          </ul>
+
+          <h2>Funded Projects</h2>
+          <ul>
+            <li><b>Development of New Concept PIM Semiconductor Leading Technology</b> &mdash; Institute for Information &amp; Communications Technology Planning &amp; Evaluation (IITP)</li>
+            <li><b>STACK: Smart, Attack-Resistant Internet of Things Networks</b> &mdash; Korea Institute for Advancement of Technology (KIAT)</li>
+          </ul>
+
+          <h2>Misc</h2>
+          <ul>
+            <li>I believe every useful computational device ever built can <a href="https://www.reddit.com/r/itrunsdoom/">run DOOM</a>. The corollary &mdash; it can probably also run a query planner &mdash; is what I work on.</li>
           </ul>
         </div>
         <footer class="content__footer"></footer>
@@ -71,7 +120,7 @@
           <div class="aside__about">
             <img class="about__logo" src="/author.png" alt="Chaemin avatar">
             <br />
-            <h1 class="about__title">chaemin-lab</h1>
+            <h1 class="about__title">chaemin-lim</h1>
             <p class="about__description">Database systems + hardware-aware acceleration</p>
           </div>
           <ul class="aside__social-links">
@@ -87,7 +136,7 @@
         </div>
       </section>
       <footer class="page__footer">
-        <p><br/><span class="active">$ echo $LANG<br/><b></b></span><br/></p>
+        <p><br/><span class="active">chaemin=# \q<br/><b></b></span><br/></p>
         <br /><br />
         <p class="copyright">© <a href="https://github.com/janoslim">janoslim</a></p>
         <p class="advertisement">Built on the <a href="https://github.com/sweetbbak/sweetbbak.github.io">sweetbbak.github.io</a> design.</p>
