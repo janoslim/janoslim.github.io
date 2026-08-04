@@ -46,6 +46,39 @@
 \section{Research Interests}
 Database Systems on Modern Hardware \quad | \quad Concurrent Computing
 
+\section{Publications}
+\begin{enumerate}[leftmargin=1.6em, itemsep=4pt, topsep=1pt]
+  \pub{\href{https://github.com/yonsei-hpcp/fascalsql}{FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables}}
+       {\textbf{\underline{Chaemin Lim}}, Suhyun Lee, Jinwoo Choi, Kwanghyun Park, Jinho Lee, Joonsung Kim, and Youngsok Kim}
+       {42nd IEEE International Conference on Data Engineering (ICDE), May 2026}
+       {}
+
+  \pub{\href{https://ieeexplore.ieee.org/document/11282501}{DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP}}
+       {\textbf{\underline{Chaemin Lim}}, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim}
+       {34th International Conference on Parallel Architectures and Compilation Techniques (PACT), Nov. 2025}
+       {}
+
+  \pub{\href{https://dl.acm.org/doi/10.1145/3698827}{SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs}}
+       {Suhyun Lee, \textbf{\underline{Chaemin Lim}}, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim}
+       {2025 ACM International Conference on Management of Data (SIGMOD), June 2025}
+       {}
+
+  \pub{\href{https://ieeexplore.ieee.org/document/10609669}{PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs}}
+       {Si Ung Noh\textsuperscript{1}, Junguk Hong\textsuperscript{1}, \textbf{\underline{Chaemin Lim}}, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee}
+       {51st IEEE/ACM International Symposium on Computer Architecture (ISCA), June--July 2024 \textsuperscript{1}Co-first authors}
+       {}
+
+  \pub{\href{https://doi.org/10.1145/3589258}{Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs}}
+       {\textbf{\underline{Chaemin Lim}}, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim}
+       {2023 ACM SIGMOD International Conference on Management of Data (SIGMOD), June 2023}
+       {}
+
+  \pub{\href{https://dl.acm.org/doi/10.1145/3528535.3531513}{GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware}}
+       {Jinwoo Choi\textsuperscript{1}, Jaeyeon Kim\textsuperscript{1}, \textbf{\underline{Chaemin Lim}}\textsuperscript{1}, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim}
+       {23rd ACM/IFIP International Middleware Conference (Middleware), Nov. 2022 \textsuperscript{1}Co-first authors}
+       {}
+\end{enumerate}
+
 \section{Employment}
 \begin{itemize}[leftmargin=1.2em, itemsep=3pt, topsep=1pt]
   \item \textbf{System Architect Intern}, Mangoboost \hfill Aug 2025 -- Jul 2026
@@ -53,41 +86,8 @@ Database Systems on Modern Hardware \quad | \quad Concurrent Computing
       \item Worked on vLLM's GPU inference path for AMD ROCm: wired AMD AITER MLA kernels into multi-token prediction (MTP) decode, fixed a TP8 MTP decode correctness bug, and handled FP8 KV cache dtypes and CUDA graph capture padding.
       \item Worked on MoRIIO, vLLM's RDMA-based KV cache transfer for multi-node serving: fixed async KV transfer completion and cleanup, deferred send drain, and READ handoff routing, and added multi-node TP=16 prefill-decode support.
     \end{itemize}
-  \item \textbf{Research Assistant}, HPCP Lab., Yonsei University \hfill Sep 2023 -- Present
+  \item \textbf{Research Assistant}, HPCP Lab., Yonsei University \hfill 2021 -- Present
 \end{itemize}
-
-\section{Publications}
-\begin{enumerate}[leftmargin=1.6em, itemsep=4pt, topsep=1pt]
-  \pub{FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables}
-       {Chaemin Lim, Suhyun Lee, Jinwoo Choi, Kwanghyun Park, Jinho Lee, Joonsung Kim, and Youngsok Kim}
-       {42nd IEEE International Conference on Data Engineering (ICDE), May 2026}
-       {}
-
-  \pub{DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP}
-       {Chaemin Lim, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim}
-       {34th International Conference on Parallel Architectures and Compilation Techniques (PACT), Nov. 2025}
-       {}
-
-  \pub{SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs}
-       {Suhyun Lee, Chaemin Lim, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim}
-       {2025 ACM International Conference on Management of Data (SIGMOD), June 2025}
-       {}
-
-  \pub{PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs}
-       {Si Ung Noh\footnote{Co-first authors}, Junguk Hong\footnote{Co-first authors}, Chaemin Lim, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee}
-       {51st IEEE/ACM International Symposium on Computer Architecture (ISCA), June--July 2024}
-       {}
-
-  \pub{Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs}
-       {Chaemin Lim, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim}
-       {2023 ACM SIGMOD International Conference on Management of Data (SIGMOD), June 2023}
-       {}
-
-  \pub{GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware}
-       {Jinwoo Choi\footnote{Co-first authors}, Jaeyeon Kim\footnote{Co-first authors}, Chaemin Lim\footnote{Co-first authors}, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim}
-       {23rd ACM/IFIP International Middleware Conference (Middleware), Nov. 2022}
-       {}
-\end{enumerate}
 
 \section{Patents}
 \begin{itemize}[leftmargin=1.2em, itemsep=3pt, topsep=1pt]
