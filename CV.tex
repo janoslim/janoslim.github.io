@@ -1,155 +1,280 @@
-\documentclass[10pt]{article}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[10pt, a4paper]{awesome-cv}
 
-\usepackage[margin=0.7in]{geometry}
-\usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{parskip}
-\usepackage{titlesec}
-\usepackage{etoolbox}
+\geometry{left=1.4cm, top=0.8cm, right=1.4cm, bottom=1.5cm, footskip=0.5cm}
+\definecolor{awesome}{HTML}{101CA4}
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand{\acvHeaderSocialSep}{\enskip\textbar\enskip}
+\renewcommand{\acvHeaderAfterSocialSkip}{2.5mm}
+\renewcommand{\acvSectionTopSkip}{1.6mm}
+\renewcommand{\acvSectionContentTopSkip}{1.4mm}
 
-\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=black}
-
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
-
-\titleformat{\section}
-  {\large\bfseries}
-  {}{0pt}{}
-  [\vspace{-2pt}\rule{\textwidth}{0.5pt}]
-\titlespacing*{\section}{0pt}{8pt}{2pt}
-
-\newcommand{\pub}[4]{%
-  \item #1
-
-  \small #2
-
-  \textit{#3}
-
-  \normalsize #4%
+\hypersetup{
+  pdftitle={Chaemin Lim - Curriculum Vitae},
+  pdfauthor={Chaemin Lim},
+  pdfsubject={Academic Curriculum Vitae},
+  pdfkeywords={database systems, GPU, PIM, DPU, hardware acceleration}
 }
 
-\newcommand{\employment}[3]{%
-  \item \textbf{#1} \hfill #2
-  \begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=1pt]
-    #3
-  \end{itemize}%
+\name{Chaemin}{Lim}
+\position{Ph.D. Candidate in Computer Science{\enskip\cdotp\enskip}Database Systems Researcher}
+\address{High Performance Computing Platform (HPCP) Lab., College of Computing, Yonsei University, Seoul, Korea}
+\email{cmlim@yonsei.ac.kr}
+\homepage{janoslim.github.io}
+\github{janoslim}
+\googlescholar{h1HSr_sAAAAJ}{Google Scholar}
+\extrainfo{\href{https://www.linkedin.com/in/chaemin-lim-038843263/}{\faLinkedin\ LinkedIn}}
+
+\newcommand{\myname}{\textbf{\underline{Chaemin Lim}}}
+\newcommand{\publication}[6]{%
+  \item \textbf{\href{#1}{#2}}\\
+  #4\\
+  \textit{#5}%
+  \ifempty{#3}{}{ \href{#3}{[Github]}}\\[-0.15em]
+  \textbf{Keywords:} #6
+}
+\newcommand{\patententry}[4]{%
+  \item \textbf{\href{#1}{#2}}\\
+  #3\\
+  \textit{#4}
+}
+\newcommand{\talkentry}[3]{%
+  \item \textbf{#1}\\[-0.15em]
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l r}
+    #2 & #3
+  \end{tabular*}
+}
+\newenvironment{publicationlist}{%
+  \vspace{0.4mm}
+  \begin{enumerate}[leftmargin=2.2em, label=\arabic*., itemsep=0.35em, topsep=0.2em]
+  \small
+}{%
+  \end{enumerate}
+  \vspace{0.4mm}
+}
+\newenvironment{patentlist}{%
+  \vspace{0.4mm}
+  \begin{enumerate}[leftmargin=2.2em, label=\arabic*., itemsep=0.4em, topsep=0.2em]
+  \small
+}{%
+  \end{enumerate}
+  \vspace{0.4mm}
+}
+\newenvironment{researchitems}{%
+  \begin{itemize}[leftmargin=1.4em, itemsep=0.2em, topsep=0.2em]
+  \small
+}{%
+  \end{itemize}
+}
+\newcommand{\teachingentry}[3]{%
+  \noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r}
+    \textbf{#1}, #2 & \textit{#3}
+  \end{tabular*}\par
 }
 
 \begin{document}
 
-\begin{center}
-  {\LARGE\bfseries Chaemin Lim}\\[2pt]
-  {\small High Performance Computing Platform (HPCP) Lab., College of Computing, Yonsei University, Seoul, Korea}\\[2pt]
-  {\small \href{mailto:cmlim@yonsei.ac.kr}{cmlim@yonsei.ac.kr} \quad | \quad \href{https://github.com/janoslim}{github.com/janoslim} \quad | \quad \href{https://scholar.google.com/citations?user=h1HSr_sAAAAJ}{Google Scholar}}
-\end{center}
+\makecvheader
+\makecvfooter{}{Chaemin Lim~~~\cdotp~~~Curriculum Vitae}{\thepage}
 
-\section{Research Interests}
-Database Systems on Modern Hardware \quad | \quad Concurrent Computing
+\cvsection{Research Interests}
+\begin{cvparagraph}
+My research broadly spans systems software, with a primary focus on database systems. I design hardware-aware execution and data-movement mechanisms for heterogeneous platforms, ranging from GPU-, PIM-, and DPU-accelerated servers to resource-constrained and trusted edge devices. My goal is to translate emerging hardware capabilities into practical, efficient, and secure end-to-end systems.
+\end{cvparagraph}
+\begin{researchitems}
+  \item \textbf{GPU-accelerated databases:} analytical query engines, relational OLAP, data movement, and out-of-memory execution.
+  \item \textbf{Near-data processing systems:} join processing, skew handling, and collective communication on commodity PIM hardware, with ongoing work on DPU-offloaded database processing.
+  \item \textbf{Systems software for secure and resource-constrained edge computing:} trusted execution environments, efficient on-device inference, and attack-resistant IoT platforms.
+\end{researchitems}
 
-\section{Publications}
-\begin{enumerate}[leftmargin=1.6em, itemsep=4pt, topsep=1pt]
-  \pub{\href{https://github.com/yonsei-hpcp/fascalsql}{FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables}}
-       {\textbf{\underline{Chaemin Lim}}, Suhyun Lee, Jinwoo Choi, Kwanghyun Park, Jinho Lee, Joonsung Kim, and Youngsok Kim}
-       {42nd IEEE International Conference on Data Engineering (ICDE), May 2026}
-       {}
+\cvsection{Publications}
+\begin{publicationlist}
+  \publication
+    {https://ieeexplore.ieee.org/document/11629529}
+    {FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables}
+    {https://github.com/yonsei-hpcp/fascalsql}
+    {\myname, Suhyun Lee, Jinwoo Choi, Kwanghyun Park, Jinho Lee, Joonsung Kim, and Youngsok Kim.}
+    {42nd IEEE International Conference on Data Engineering (ICDE), May 2026.}
+    {GPU; Database Systems; Out-of-Memory Query Processing}
 
-  \pub{\href{https://ieeexplore.ieee.org/document/11282501}{DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP}}
-       {\textbf{\underline{Chaemin Lim}}, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim}
-       {34th International Conference on Parallel Architectures and Compilation Techniques (PACT), Nov. 2025}
-       {}
+  \publication
+    {https://ieeexplore.ieee.org/document/11282501}
+    {DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP}
+    {}
+    {\myname, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim.}
+    {34th International Conference on Parallel Architectures and Compilation Techniques (PACT), Nov. 2025.}
+    {GPU; Database Systems; Data Movement; Relational OLAP}
 
-  \pub{\href{https://dl.acm.org/doi/10.1145/3698827}{SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs}}
-       {Suhyun Lee, \textbf{\underline{Chaemin Lim}}, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim}
-       {2025 ACM International Conference on Management of Data (SIGMOD), June 2025}
-       {}
+  \publication
+    {https://dl.acm.org/doi/abs/10.1145/3698827}
+    {SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs}
+    {https://github.com/yonsei-hpcp/spid-join}
+    {Suhyun Lee, \myname, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim.}
+    {2025 ACM International Conference on Management of Data (SIGMOD), June 2025.}
+    {PIM; Database Systems; Join Processing; Data Skew}
 
-  \pub{\href{https://ieeexplore.ieee.org/document/10609669}{PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs}}
-       {Si Ung Noh\textsuperscript{1}, Junguk Hong\textsuperscript{1}, \textbf{\underline{Chaemin Lim}}, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee}
-       {51st IEEE/ACM International Symposium on Computer Architecture (ISCA), June--July 2024 \textsuperscript{1}Co-first authors}
-       {}
+  \publication
+    {https://ieeexplore.ieee.org/document/10609669}
+    {PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs}
+    {https://github.com/AIS-SNU/PID-Comm}
+    {Si Ung Noh\textsuperscript{1}, Junguk Hong\textsuperscript{1}, \myname, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee. \textsuperscript{1}First Co-Author.}
+    {51st IEEE/ACM International Symposium on Computer Architecture (ISCA), June--July 2024.}
+    {PIM; Collective Communication; Distributed Systems}
 
-  \pub{\href{https://doi.org/10.1145/3589258}{Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs}}
-       {\textbf{\underline{Chaemin Lim}}, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim}
-       {2023 ACM SIGMOD International Conference on Management of Data (SIGMOD), June 2023}
-       {}
+  \publication
+    {https://doi.org/10.1145/3589258}
+    {Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs}
+    {https://github.com/yonsei-hpcp/pid-join}
+    {\myname, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim.}
+    {2023 ACM SIGMOD International Conference on Management of Data (SIGMOD), June 2023.}
+    {PIM; Database Systems; Join Processing}
 
-  \pub{\href{https://dl.acm.org/doi/10.1145/3528535.3531513}{GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware}}
-       {Jinwoo Choi\textsuperscript{1}, Jaeyeon Kim\textsuperscript{1}, \textbf{\underline{Chaemin Lim}}\textsuperscript{1}, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim}
-       {23rd ACM/IFIP International Middleware Conference (Middleware), Nov. 2022 \textsuperscript{1}Co-first authors}
-       {}
-\end{enumerate}
+  \publication
+    {https://dl.acm.org/doi/10.1145/3528535.3531513}
+    {GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware}
+    {}
+    {Jinwoo Choi\textsuperscript{1}, Jaeyeon Kim\textsuperscript{1}, \myname\textsuperscript{1}, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim. \textsuperscript{1}First Co-Author.}
+    {23rd ACM/IFIP International Middleware Conference (Middleware), Nov. 2022.}
+    {Trusted Execution Environments; On-Device Inference; Security}
+\end{publicationlist}
 
-\section{Employment}
-\begin{itemize}[leftmargin=1.2em, itemsep=3pt, topsep=1pt]
-  \item \textbf{System Architect Intern}, Mangoboost \hfill Aug 2025 -- Jul 2026
-    \begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=1pt]
-      \item Worked on vLLM's GPU inference path for AMD ROCm: wired AMD AITER MLA kernels into multi-token prediction (MTP) decode, fixed a TP8 MTP decode correctness bug, and handled FP8 KV cache dtypes and CUDA graph capture padding.
-      \item Worked on MoRIIO, vLLM's RDMA-based KV cache transfer for multi-node serving: fixed async KV transfer completion and cleanup, deferred send drain, and READ handoff routing, and added multi-node TP=16 prefill-decode support.
-    \end{itemize}
-  \item \textbf{Research Assistant}, HPCP Lab., Yonsei University \hfill 2021 -- Present
+\cvsection{Education}
+\begin{cventries}
+  \cventry
+    {Ph.D. Candidate in Computer Science}
+    {Yonsei University}
+    {Seoul, Korea}
+    {Sep. 2023 -- Present}
+    {\begin{cvitems}
+      \item Advised by Prof. Youngsok Kim, High Performance Computing Platform (HPCP) Lab.
+    \end{cvitems}}
+  \vspace{0.8mm}
+  \cventry
+    {M.S. in Artificial Intelligence}
+    {Yonsei University}
+    {Seoul, Korea}
+    {Mar. 2021 -- Aug. 2023}
+    {\begin{cvitems}
+      \item Advised by Prof. Youngsok Kim, High Performance Computing Platform (HPCP) Lab.
+    \end{cvitems}}
+  \vspace{0.8mm}
+  \cventry
+    {B.A. in Journalism; B.Eng. in Computer Engineering (Double Major)}
+    {Hankuk University of Foreign Studies}
+    {Seoul, Korea}
+    {Mar. 2017 -- Feb. 2021}
+    {}
+\end{cventries}
+
+\newpage
+
+\cvsection{Patents}
+\begin{patentlist}
+  \patententry
+    {https://patents.google.com/patent/US20260119044A1/en}
+    {Skew Resistance Processing in a DIMM Device and Processing Method}
+    {Youngsok Kim, Suhyun Lee, Chaemin Lim, Jinwoo Choi, and Hanjun Kim.}
+    {US Patent Application 18/933,770, 2026.}
+
+  \patententry
+    {https://patents.google.com/patent/US20250335126A1/en}
+    {Electronic Device and Method with Processing in Memory Operation}
+    {Bongjun Kim, Youngsok Kim, Sungchul Lee, Seil Lee, Suhyun Lee, Jounghoo Lee, Chaemin Lim, Hanna Cha, Jinwoo Choi, Yeonan Ha, and Hanwoong Jung.}
+    {US Patent Application 19/060,889, 2025.}
+
+  \patententry
+    {https://patents.google.com/patent/US12386778B2/en}
+    {PIM-Based Computing Device for Accelerating Join Operation}
+    {Youngsok Kim, Chaemin Lim, Hanjun Kim, and Jinho Lee.}
+    {US Patent 12,386,778, 2025.}
+
+  \patententry
+    {https://patents.google.com/patent/US20240370563A1/en}
+    {Artificial Intelligence Device Based on Trust Environment}
+    {Youngsok Kim, Jinwoo Choi, Chaemin Lim, Suhyun Lee, Dokyung Song, and Jinho Lee.}
+    {US Patent Application 18/229,765, 2024.}
+\end{patentlist}
+
+\cvsection{Invited Talks \& Conference Presentations}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.15em, topsep=0.15em]
+  \small
+  \talkentry
+    {FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables}
+    {Conference Presenter, IEEE ICDE}
+    {May 2026}
+  \talkentry
+    {DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP}
+    {Conference Presenter, IEEE/ACM PACT}
+    {Nov. 2025}
+  \talkentry
+    {A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs}
+    {Invited Speaker, ABUMPIMP, EUROPAR}
+    {Aug. 2023}
+  \talkentry
+    {Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs}
+    {Conference Presenter, ACM SIGMOD}
+    {June 2023}
 \end{itemize}
 
-\section{Patents}
-\begin{itemize}[leftmargin=1.2em, itemsep=3pt, topsep=1pt]
-  \item \textbf{Skew Resistance Processing in a DIMM Device and Processing Method}. US Patent Application 18/933,770, 2026. Youngsok Kim, Suhyun Lee, Chaemin Lim.
-  \item \textbf{Electronic Device and Method with Processing in Memory Operation}. US Patent Application 19/060,889, 2025. Bongjun Kim, Youngsok Kim, Sungchul Lee, Seil Lee, Suhyun Lee, Jounghoo Lee, Chaemin Lim, Hanna Cha, Jinwoo Choi, Yeonan Ha, Hanwoong Jung.
-  \item \textbf{PIM-Based Computing Device for Accelerating Join Operation}. US Patent 12,386,778, 2025. Youngsok Kim, Chaemin Lim.
-  \item \textbf{Artificial Intelligence Device Based on Trust Environment}. US Patent Application 18/229,765, 2024. Youngsok Kim, Jinwoo Choi, Chaemin Lim, Suhyun Lee, Dokyung Song, Jinho Lee.
-\end{itemize}
+\cvsection{Awards}
+\begin{cventries}
+  \cventry
+    {Encouragement Prize}
+    {Samsung Humantech Paper Awards}
+    {Samsung Electronics}
+    {2024}
+    {\begin{cvitems}
+      \item Awarded for ``PID-Comm: Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMM Devices.''
+    \end{cvitems}}
+\end{cventries}
 
-\section{Invited Talks}
-\begin{itemize}[leftmargin=1.2em, itemsep=2pt, topsep=1pt]
-  \item \textbf{A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs} @ ABUMPIMP, a minisymposium on applications and benefits of commercial massively parallel PIM platforms, EUROPAR 2023.
-\end{itemize}
+\cvsection{Employment}
+\begin{cventries}
+  \cventry
+    {System Architect Intern}
+    {Mangoboost}
+    {Seoul, Korea}
+    {Aug. 2025 -- Jul. 2026}
+    {\begin{cvitems}
+      \item Worked primarily on accelerating prefill--decode (PD) disaggregated LLM serving on AMD GPU clusters, focusing on RDMA-based KV-cache transfer, multi-node serving, and ROCm inference paths.
+      \item Improved the MoRIIO serving path across asynchronous KV-transfer completion and cleanup, send draining, READ handoff routing, and multi-node TP=16 prefill--decode execution.
+      \item Made selected upstream contributions to vLLM: AMD AITER MLA/MTP and FP8 correctness \href{https://github.com/vllm-project/vllm/pull/45227}{[\#45227]}, shared-memory broadcast reliability \href{https://github.com/vllm-project/vllm/pull/45224}{[\#45224]}, and MoRIIO proxy health monitoring \href{https://github.com/vllm-project/vllm/pull/45222}{[\#45222]}.
+    \end{cvitems}}
+\end{cventries}
 
-\section{Awards}
-\begin{itemize}[leftmargin=1.2em, itemsep=2pt, topsep=1pt]
-  \item \textbf{Encouragement Prize}, Samsung Humantech Paper Awards, 2024. For ``PID-Comm: Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMM Devices'' (Junguk Hong, Si Ung Noh, Seongyeon Park, and Chaemin Lim).
-\end{itemize}
+\cvsection{Funded Research Projects}
+\begin{cventries}
+  \cventry
+    {}
+    {Development of New Concept PIM Semiconductor Leading Technology}
+    {IITP}
+    {2022 -- Present}
+    {\begin{cvitems}
+      \item Developed database and communication systems on commodity UPMEM DIMMs, including PID-Join, SPID-Join, and PID-Comm.
+      \item Released reproducibility artifacts for join processing and collective communication.
+    \end{cvitems}}
+  \cventry
+    {}
+    {STACK: Smart, Attack-Resistant Internet of Things Networks}
+    {KIAT}
+    {2021}
+    {\begin{cvitems}
+      \item Worked with trusted execution environment software for attack-resistant IoT systems.
+      \item Reported an STM32MP1 clock-rate computation bug in OP-TEE OS; the merged fix includes a \texttt{Reported-by} acknowledgment. \href{https://github.com/OP-TEE/optee_os/pull/4904}{[OP-TEE \#4904]}
+    \end{cvitems}}
+\end{cventries}
 
-\section{Projects}
-\begin{itemize}[leftmargin=1.2em, itemsep=3pt, topsep=1pt]
-\employment{Development of New Concept PIM Semiconductor Leading Technology}
-  {Institute for Information and Communications Technology Planning and Evaluation (IITP), 2022}
-  {
-    \item Presented UPMEM-based Processing-in-Memory (PIM) research at ABUMPIMP, a minisymposium on applications and benefits of commercial massively parallel PIM platforms.
-    \item Open-sourced research artifacts for PID-Join (SIGMOD 2023) and PID-Comm (ISCA 2024), enabling reproducible evaluation on commodity UPMEM DIMMs.
-    \item Developed PIM database and communication systems targeting data movement bottlenecks, join processing, and collective communication on modern memory-centric hardware.
-  }
+\cvsection{Teaching Experience}
+\begin{cvparagraph}
+  \teachingentry{Teaching Assistant}{Logic Circuit Design (CSI2111), Yonsei University}{Fall 2022}
+  \teachingentry{Teaching Assistant}{Open Source Projects (CSI2115), Yonsei University}{Fall 2021}
+  \teachingentry{Teaching Assistant}{Information Security (CSI4109), Yonsei University}{Spring 2021}
+\end{cvparagraph}
 
-\employment{STACK: Smart, Attack-Resistant Internet of Things Networks}
-  {Korea Institute for Advancement of Technology (KIAT), 2021}
-  {
-    \item Reported an STM32MP1 clock-rate computation bug in OP-TEE OS affecting HASH1, GPIOZ, CRYP1, and MDMA clocks; acknowledged by a merged upstream fix with a \texttt{Reported-by} tag. \href{https://github.com/OP-TEE/optee_os/pull/4904}{OP-TEE/optee\_os\#4904}.
-    \item Worked with secure embedded-system software stacks, including trusted execution environment (TEE) components for attack-resistant IoT platforms.
-  }
-\end{itemize}
-
-\section{Education}
-\begin{itemize}[leftmargin=1.2em, itemsep=2pt, topsep=1pt]
-  \item \textbf{Yonsei University}, Seoul, Korea \hfill Sep 2023 -- Present
-    \begin{itemize}[leftmargin=1.2em, itemsep=0pt, topsep=0pt]
-      \item Ph.D. Student, Computer Science
-    \end{itemize}
-  \item \textbf{Yonsei University}, Seoul, Korea \hfill Mar 2021 -- Aug 2023
-    \begin{itemize}[leftmargin=1.2em, itemsep=0pt, topsep=0pt]
-      \item Master of Science, Artificial Intelligence
-    \end{itemize}
-  \item \textbf{Hankuk University of Foreign Studies}, Seoul, Korea \hfill Mar 2017 -- Feb 2021
-    \begin{itemize}[leftmargin=1.2em, itemsep=0pt, topsep=0pt]
-      \item B.Eng. in Computer Engineering (Double Major)
-      \item B.A. in Journalism
-    \end{itemize}
-\end{itemize}
-
-\section{Teaching Experience}
-\begin{itemize}[leftmargin=1.2em, itemsep=2pt, topsep=1pt]
-  \item Logic Circuit Design (CSI2111): Teaching Assistant \hfill Fall 2022
-  \item Open Source Projects (CSI2115): Teaching Assistant \hfill Fall 2021
-  \item Information Security (CSI4109): Teaching Assistant \hfill Spring 2021
-\end{itemize}
-
-\section{Skills}
-C, C++, Python, Scala, Rust, SQL
+\cvsection{Technical Skills}
+\begin{cvparagraph}
+\textbf{Programming:} C, C++, Python, Scala, Rust, SQL
+\end{cvparagraph}
 
 \end{document}

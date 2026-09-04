@@ -29,16 +29,17 @@
       <section class="page__body">
         <header class="content__header"><h1>About</h1></header>
         <div class="content__body">
-          <p>Hi! I&rsquo;m Chaemin Lim, a Ph.D. student at <a href="https://hpcp.yonsei.ac.kr/">Yonsei University</a> / HPCP Lab, advised by <a href="https://hpcp.yonsei.ac.kr/~youngsok/">Prof. Youngsok Kim</a>.</p>
-          <p>I work on databases close to the metal: query engines, join algorithms, and execution strategies for GPUs and processing-in-memory (PIM) hardware. I care about making analytical workloads stop being bottlenecked by data movement.</p>
+          <p>Hi! I&rsquo;m Chaemin Lim, a Ph.D. candidate at <a href="https://hpcp.yonsei.ac.kr/">Yonsei University</a> / HPCP Lab, advised by <a href="https://hpcp.yonsei.ac.kr/~youngsok/">Prof. Youngsok Kim</a>.</p>
+          <p>My research broadly spans systems software, with a primary focus on database systems. I design hardware-aware execution and data-movement mechanisms for heterogeneous platforms, ranging from GPU-, PIM-, and DPU-accelerated servers to resource-constrained and trusted edge devices.</p>
+          <p>My goal is to translate emerging hardware capabilities into practical, efficient, and secure end-to-end systems.</p>
 
           <h2>Research Interests</h2>
           <ul>
-            <li>Database acceleration on modern hardware (GPU, PIM, NVMe)</li>
-            <li>Query processing and engine architecture</li>
-            <li>Join algorithms and skew handling</li>
-            <li>Hardware-aware optimizer and compiler support</li>
-            <li>Concurrent and lock-free data structures</li>
+            <li>Systems software, with an emphasis on database systems</li>
+            <li>GPU-accelerated analytical and out-of-memory query execution</li>
+            <li>Near-data processing with PIM and DPU hardware</li>
+            <li>Join processing, skew handling, collective communication, and data movement</li>
+            <li>Secure and resource-constrained edge computing, trusted execution environments, and on-device inference</li>
           </ul>
 
           <h2>Publications</h2>
@@ -47,49 +48,65 @@
               <b><a href="https://ieeexplore.ieee.org/document/11629529">FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables</a></b><br>
               <a href="https://github.com/yonsei-hpcp/fascalsql">[GitHub]</a><br>
               <b><u>Chaemin Lim</u></b>, Suhyun Lee, Jinwoo Choi, Kwanghyun Park, Jinho Lee, Joonsung Kim, and Youngsok Kim.<br>
-              <i>42nd IEEE International Conference on Data Engineering (<b>ICDE</b>)</i>, May 2026.
+              <i>42nd IEEE International Conference on Data Engineering (<b>ICDE</b>)</i>, May 2026.<br>
+              <small><b>Keywords:</b> GPU; Database Systems; Out-of-Memory Query Processing</small>
             </li>
             <li>
               <b><a href="https://ieeexplore.ieee.org/document/11282501">DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</a></b><br>
               <b><u>Chaemin Lim</u></b>, Suhyun Lee, Jinwoo Choi, Joonsung Kim, Jinho Lee, and Youngsok Kim.<br>
-              <i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025.
+              <i>34th International Conference on Parallel Architectures and Compilation Techniques (<b>PACT</b>)</i>, Nov. 2025.<br>
+              <small><b>Keywords:</b> GPU; Database Systems; Data Movement; Relational OLAP</small>
             </li>
             <li>
               <b><a href="https://dl.acm.org/doi/abs/10.1145/3698827">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank- and Rank-level Parallelisms of DIMMs</a></b>
               <a href="https://github.com/yonsei-hpcp/spid-join">[GitHub]</a><br>
               Suhyun Lee, <b><u>Chaemin Lim</u></b>, Jinwoo Choi, Heelim Choi, Chan Lee, Yongjun Park, Kwanghyun Park, Hanjun Kim, and Youngsok Kim.<br>
-              <i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025.
+              <i>2025 ACM International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2025.<br>
+              <small><b>Keywords:</b> PIM; Database Systems; Join Processing; Data Skew</small>
             </li>
             <li>
               <b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10609669">PID-Comm: A Fast and Flexible Collective Communication Framework for Commodity Processing-in-DIMMs</a></b>
               <a href="https://github.com/AIS-SNU/PID-Comm">[GitHub]</a><br>
               Si Ung Noh<sup>1</sup>, Junguk Hong<sup>1</sup>, <b><u>Chaemin Lim</u></b>, Seongyeon Park, Jeehyun Kim, Hanjun Kim, Youngsok Kim, and Jinho Lee.<br>
-              <i>51st IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June&ndash;July 2024. <small><sup>1</sup>Co-first authors</small>
+              <i>51st IEEE/ACM International Symposium on Computer Architecture (<b>ISCA</b>)</i>, June&ndash;July 2024. <small><sup>1</sup>First Co-Author</small><br>
+              <small><b>Keywords:</b> PIM; Collective Communication; Distributed Systems</small>
             </li>
             <li>
               <b><a href="https://doi.org/10.1145/3589258">Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</a></b>
               <a href="https://github.com/yonsei-hpcp/pid-join">[GitHub]</a><br>
               <b><u>Chaemin Lim</u></b>, Suhyun Lee, Jinwoo Choi, Jounghoo Lee, Seongyeon Park, Hanjun Kim, Jinho Lee, and Youngsok Kim.<br>
-              <i>2023 ACM SIGMOD International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023.
+              <i>2023 ACM SIGMOD International Conference on Management of Data (<b>SIGMOD</b>)</i>, June 2023.<br>
+              <small><b>Keywords:</b> PIM; Database Systems; Join Processing</small>
             </li>
             <li>
               <b><a href="https://dl.acm.org/doi/10.1145/3528535.3531513">GuardiaNN: Fast and Secure On-Device Inference in TrustZone Using Embedded SRAM and Cryptographic Hardware</a></b><br>
               Jinwoo Choi<sup>1</sup>, Jaeyeon Kim<sup>1</sup>, <b><u>Chaemin Lim</u></b><sup>1</sup>, Suhyun Lee, Jinho Lee, Dokyung Song, and Youngsok Kim.<br>
-              <i>23rd ACM/IFIP International Middleware Conference (<b>Middleware</b>)</i>, Nov. 2022. <small><sup>1</sup>Co-first authors</small>
+              <i>23rd ACM/IFIP International Middleware Conference (<b>Middleware</b>)</i>, Nov. 2022. <small><sup>1</sup>First Co-Author</small><br>
+              <small><b>Keywords:</b> Trusted Execution Environments; On-Device Inference; Security</small>
             </li>
           </ol>
 
-          <h2>Patents</h2>
+          <h2>Education</h2>
           <ul>
-            <li><b>Skew Resistance Processing in a DIMM Device and Processing Method</b>. US Patent Application 18/933,770, 2026. Youngsok Kim, Suhyun Lee, and Chaemin Lim.</li>
-            <li><b>Electronic Device and Method with Processing in Memory Operation</b>. US Patent Application 19/060,889, 2025. Bongjun Kim, Youngsok Kim, Sungchul Lee, Seil Lee, Suhyun Lee, Jounghoo Lee, Chaemin Lim, Hanna Cha, Jinwoo Choi, Yeonan Ha, and Hanwoong Jung.</li>
-            <li><b>PIM-Based Computing Device for Accelerating Join Operation</b>. US Patent 12,386,778, 2025. Youngsok Kim and Chaemin Lim.</li>
-            <li><b>Artificial Intelligence Device Based on Trust Environment</b>. US Patent Application 18/229,765, 2024. Youngsok Kim, Jinwoo Choi, Chaemin Lim, Suhyun Lee, Dokyung Song, and Jinho Lee.</li>
+            <li>[Sep. 2023 - Present] Ph.D. Candidate in Computer Science, Yonsei University; advised by Prof. Youngsok Kim, High Performance Computing Platform (HPCP) Lab</li>
+            <li>[Mar. 2021 - Aug. 2023] M.S. in Artificial Intelligence, Yonsei University; advised by Prof. Youngsok Kim, High Performance Computing Platform (HPCP) Lab</li>
+            <li>[Mar. 2017 - Feb. 2021] B.A. in Journalism; B.Eng. in Computer Engineering (Double Major), Hankuk University of Foreign Studies</li>
           </ul>
 
-          <h2>Invited Talks</h2>
+          <h2>Patents</h2>
           <ul>
-            <li><b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b> @ <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023. <a href="https://youtu.be/G_9Zd1EwQ-8?si=sSJNSfTsD_ttAgR-">[YouTube]</a></li>
+            <li><b><a href="https://patents.google.com/patent/US20260119044A1/en">Skew Resistance Processing in a DIMM Device and Processing Method</a></b>. US Patent Application 18/933,770, 2026. Youngsok Kim, Suhyun Lee, Chaemin Lim, Jinwoo Choi, and Hanjun Kim.</li>
+            <li><b><a href="https://patents.google.com/patent/US20250335126A1/en">Electronic Device and Method with Processing in Memory Operation</a></b>. US Patent Application 19/060,889, 2025. Bongjun Kim, Youngsok Kim, Sungchul Lee, Seil Lee, Suhyun Lee, Jounghoo Lee, Chaemin Lim, Hanna Cha, Jinwoo Choi, Yeonan Ha, and Hanwoong Jung.</li>
+            <li><b><a href="https://patents.google.com/patent/US12386778B2/en">PIM-Based Computing Device for Accelerating Join Operation</a></b>. US Patent 12,386,778, 2025. Youngsok Kim, Chaemin Lim, Hanjun Kim, and Jinho Lee.</li>
+            <li><b><a href="https://patents.google.com/patent/US20240370563A1/en">Artificial Intelligence Device Based on Trust Environment</a></b>. US Patent Application 18/229,765, 2024. Youngsok Kim, Jinwoo Choi, Chaemin Lim, Suhyun Lee, Dokyung Song, and Jinho Lee.</li>
+          </ul>
+
+          <h2>Invited Talks &amp; Conference Presentations</h2>
+          <ul>
+            <li><b>FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables</b>. Conference Presenter, IEEE ICDE, May 2026.</li>
+            <li><b>DMO-DB: Mitigating the Data Movement Bottlenecks of GPU-Accelerated Relational OLAP</b>. Conference Presenter, IEEE/ACM PACT, Nov. 2025.</li>
+            <li><b>A Fast Processing-in-DIMM Join Algorithm Exploiting UPMEM DIMMs</b>. Invited Speaker, ABUMPIMP, EUROPAR, Aug. 2023.</li>
+            <li><b>Design and Analysis of a Processing-in-DIMM Join Algorithm: A Case Study with UPMEM DIMMs</b>. Conference Presenter, ACM SIGMOD, June 2023.</li>
           </ul>
 
           <h2>Awards</h2>
@@ -102,38 +119,40 @@
             <li>
               [Aug 2025 - Jul 2026] System Architect Intern, <b>Mangoboost</b> <a href="https://github.com/chaeminlim-mb">[GitHub]</a>
               <ul>
-                <li>Worked on vLLM&rsquo;s GPU inference path for AMD ROCm: wired AMD AITER MLA kernels into multi-token prediction (MTP) decode, fixed a TP8 MTP decode correctness bug, and handled FP8 KV cache dtypes and CUDA graph capture padding.</li>
-                <li>Worked on MoRIIO, vLLM&rsquo;s RDMA-based KV cache transfer for multi-node serving: fixed async KV transfer completion and cleanup, deferred send drain, and READ handoff routing, and added multi-node TP=16 prefill-decode support.</li>
+                <li>Worked primarily on system architecture and performance optimization for prefill&ndash;decode (PD) disaggregated LLM serving on AMD GPU clusters, focusing on RDMA-based KV-cache transfer, multi-node serving, and ROCm inference paths.</li>
+                <li>Improved the MoRIIO serving path across asynchronous KV-transfer completion and cleanup, send draining, READ handoff routing, and multi-node TP=16 prefill&ndash;decode execution.</li>
+                <li>Made selected upstream contributions to vLLM: <a href="https://github.com/vllm-project/vllm/pull/45227">AITER MLA/MTP and FP8 correctness</a>, <a href="https://github.com/vllm-project/vllm/pull/45224">shared-memory broadcast reliability</a>, and <a href="https://github.com/vllm-project/vllm/pull/45222">MoRIIO proxy health monitoring</a>.</li>
               </ul>
             </li>
-          </ul>
-
-          <h2>Education</h2>
-          <ul>
-            <li>[2023 - ] Ph.D. Student, Department of Computer Science, Yonsei University</li>
-            <li>[2021 - 2023] MSc in Artificial Intelligence, Yonsei University</li>
-            <li>[2019 - 2021] BEng in Computer Engineering, Hankuk University of Foreign Studies (Double Major)</li>
-            <li>[2017 - 2021] BA in Journalism, Hankuk University of Foreign Studies</li>
           </ul>
 
           <h2>Funded Projects</h2>
           <ul>
             <li>
-              <b>Development of New Concept PIM Semiconductor Leading Technology</b> &mdash; Institute for Information &amp; Communications Technology Planning &amp; Evaluation (IITP)
+              <b>Development of New Concept PIM Semiconductor Leading Technology</b> &mdash; IITP, 2022&ndash;Present
               <ul>
-                <li>Presented UPMEM-based Processing-in-Memory research at <a href="https://www.upmem.com/abumpimp-2023/">ABUMPIMP</a>, EUROPAR 2023.</li>
-                <li>Open-sourced reproducibility artifacts for <a href="https://github.com/yonsei-hpcp/pid-join">PID-Join</a> and <a href="https://github.com/AIS-SNU/PID-Comm">PID-Comm</a>, covering join processing and collective communication on commodity UPMEM DIMMs.</li>
-                <li>Built PIM database and communication systems targeting data movement bottlenecks on memory-centric hardware.</li>
+                <li>Developed database and communication systems on commodity UPMEM DIMMs, including <a href="https://github.com/yonsei-hpcp/pid-join">PID-Join</a>, <a href="https://github.com/yonsei-hpcp/spid-join">SPID-Join</a>, and <a href="https://github.com/AIS-SNU/PID-Comm">PID-Comm</a>.</li>
+                <li>Released reproducibility artifacts for join processing and collective communication.</li>
               </ul>
             </li>
             <li>
-              <b>STACK: Smart, Attack-Resistant Internet of Things Networks</b> &mdash; Korea Institute for Advancement of Technology (KIAT)
+              <b>STACK: Smart, Attack-Resistant Internet of Things Networks</b> &mdash; KIAT, 2021
               <ul>
-                <li>Reported an STM32MP1 clock-rate computation bug in OP-TEE OS affecting HASH1, GPIOZ, CRYP1, and MDMA clocks; acknowledged by a merged upstream fix with a <code>Reported-by</code> tag. <a href="https://github.com/OP-TEE/optee_os/pull/4904">OP-TEE/optee_os#4904</a></li>
-                <li>Worked with trusted execution environment (TEE) software stacks for attack-resistant IoT systems.</li>
+                <li>Worked with trusted execution environment software for attack-resistant IoT systems.</li>
+                <li>Reported an STM32MP1 clock-rate computation bug in OP-TEE OS; the merged fix includes a <code>Reported-by</code> acknowledgment. <a href="https://github.com/OP-TEE/optee_os/pull/4904">OP-TEE #4904</a></li>
               </ul>
             </li>
           </ul>
+
+          <h2>Teaching Experience</h2>
+          <ul>
+            <li>[Fall 2022] Teaching Assistant, Logic Circuit Design (CSI2111), Yonsei University</li>
+            <li>[Fall 2021] Teaching Assistant, Open Source Projects (CSI2115), Yonsei University</li>
+            <li>[Spring 2021] Teaching Assistant, Information Security (CSI4109), Yonsei University</li>
+          </ul>
+
+          <h2>Technical Skills</h2>
+          <p><b>Programming:</b> C, C++, Python, Scala, Rust, SQL</p>
 
           <h2>Misc</h2>
           <ul>

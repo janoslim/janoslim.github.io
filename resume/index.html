@@ -34,17 +34,20 @@
           <p>Download full CV: <a href="/CV.pdf">CV.pdf</a></p>
           <h2>Highlights</h2>
           <ul>
-            <li>Ph.D. student, Dept. of Computer Science, Yonsei University (2023 - )</li>
-            <li>MSc in AI, Yonsei University (2021 - 2023)</li>
-            <li>System Architect Intern @ Mangoboost (2025.08 - 2026.07)</li>
+            <li>Ph.D. Candidate in Computer Science, Yonsei University (Sep. 2023 - Present)</li>
+            <li>M.S. in Artificial Intelligence, Yonsei University (Mar. 2021 - Aug. 2023)</li>
+            <li>B.A. in Journalism; B.Eng. in Computer Engineering (Double Major), Hankuk University of Foreign Studies (Mar. 2017 - Feb. 2021)</li>
+            <li>System Architect Intern, Mangoboost (Aug. 2025 - Jul. 2026)</li>
             <li>Open-sourced research artifacts for PID-Join (SIGMOD 2023) and PID-Comm (ISCA 2024)</li>
           </ul>
 
           <h2>Research Focus</h2>
           <ul>
-            <li>Hardware-aware database systems for modern CPUs/GPUs/PIM</li>
-            <li>Query engine architecture and compiler-aware optimization</li>
-            <li>Join processing, skew handling, and collective communication on UPMEM DIMMs</li>
+            <li>Systems software, with an emphasis on database systems</li>
+            <li>Hardware-aware execution and data movement across GPUs, PIM, and DPUs</li>
+            <li>GPU analytical and out-of-memory query engines</li>
+            <li>Near-data join processing, skew handling, and collective communication</li>
+            <li>Secure and resource-constrained edge computing</li>
           </ul>
 
           <h2>Selected Publications</h2>
@@ -54,7 +57,12 @@
 
           <h2>Selected Projects and Open Source</h2>
           <ul>
-            <li><b>Mangoboost (LLM serving):</b> vLLM GPU inference on AMD ROCm (AITER MLA kernels, MTP decode, FP8 KV cache) and MoRIIO RDMA-based KV cache transfer for multi-node serving. <a href="https://github.com/chaeminlim-mb">[GitHub]</a></li>
+            <li>
+              <b>Mangoboost (LLM serving):</b> System architecture and performance optimization for prefill&ndash;decode (PD) disaggregated serving on AMD GPU clusters, focusing on RDMA-based KV-cache transfer, multi-node execution, and ROCm inference paths. Selected upstream vLLM contributions:
+              <a href="https://github.com/vllm-project/vllm/pull/45227">AMD AITER MLA/MTP and FP8 correctness</a>,
+              <a href="https://github.com/vllm-project/vllm/pull/45224">shared-memory broadcast reliability</a>, and
+              <a href="https://github.com/vllm-project/vllm/pull/45222">MoRIIO proxy health monitoring</a>.
+            </li>
             <li><b>PIM Semiconductor Leading Technology:</b> ABUMPIMP invited talk; <a href="https://github.com/yonsei-hpcp/pid-join">PID-Join</a> and <a href="https://github.com/AIS-SNU/PID-Comm">PID-Comm</a> open-source artifacts.</li>
             <li><b>STACK IoT Security:</b> OP-TEE OS STM32MP1 clock-rate bug report acknowledged in a merged upstream fix. <a href="https://github.com/OP-TEE/optee_os/pull/4904">OP-TEE/optee_os#4904</a></li>
           </ul>
