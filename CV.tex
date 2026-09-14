@@ -28,7 +28,7 @@
 
 \newcommand{\myname}{\textbf{\underline{Chaemin Lim}}}
 \newcommand{\publication}[6]{%
-  \item \textbf{\href{#1}{#2}}\\
+  \item \textbf{\ifempty{#1}{#2}{\href{#1}{#2}}}\\
   #4\\
   \textit{#5}%
   \ifempty{#3}{}{ \href{#3}{[Github]}}\\[-0.15em]
@@ -90,6 +90,14 @@ My research broadly spans systems software, with a primary focus on database sys
 
 \cvsection{Publications}
 \begin{publicationlist}
+  \publication
+    {}
+    {GJP: Fast and Efficient Join-Project Query Processing on GPUs Using Density-Aware Matrix Multiplication}
+    {}
+    {Sungchul Lee, Suhyun Lee, Hanna Cha, \myname, and Youngsok Kim.}
+    {2027 ACM International Conference on Management of Data (SIGMOD), June 2027 (to appear).}
+    {GPU; Database Systems; Join-Project Processing; Matrix Multiplication}
+
   \publication
     {https://ieeexplore.ieee.org/document/11629529}
     {FaScalSQL: A Fast and Scalable GPU-Accelerated SQL Query Engine for Out-of-Memory Tables}
