@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research &ndash; Chaemin Lim</title>
+    <meta name="description" content="Research interests and projects of Chaemin Lim.">
+    <link rel="stylesheet" href="/css/retro.css">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <div class="page">
+      <header class="masthead">
+        <a class="logo" href="/">
+        <svg width="32" height="40" viewBox="0 0 32 40" aria-hidden="true">
+          <path d="M2 7v26c0 2.8 6.3 5 14 5s14-2.2 14-5V7" fill="#ffcc66" stroke="#003399" stroke-width="2"/>
+          <path d="M2 16c0 2.8 6.3 5 14 5s14-2.2 14-5M2 25c0 2.8 6.3 5 14 5s14-2.2 14-5" fill="none" stroke="#003399" stroke-width="2"/>
+          <ellipse cx="16" cy="7" rx="14" ry="5" fill="#ffcc66" stroke="#003399" stroke-width="2"/>
+        </svg>
+          <span>
+            <span class="logo-name">Chaemin Lim</span>
+            <span class="logo-tag">Database systems + hardware-aware acceleration</span>
+          </span>
+        </a>
+        <a class="ad" href="/CV.pdf">Get my CV!<br><b>CV.pdf</b><br>2 pages</a>
+      </header>
+      <nav class="navbar" aria-label="Main">
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/research/" aria-current="page">Research</a></li>
+        <li><a href="/publications/">Publications</a></li>
+        <li><a href="/education/">Education</a></li>
+        <li><a href="/experience/">Experience</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/CV.pdf">CV.pdf</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="titlebar"><a href="/">Home</a> &gt; <h1>Research</h1></div>
+
+        <h2 id="interests">Research Interests</h2>
+        <p>My research broadly spans systems software, with a primary focus on database systems. I design hardware-aware execution and data-movement mechanisms for heterogeneous platforms, ranging from GPU-, PIM-, and DPU-accelerated servers to resource-constrained and trusted edge devices.</p>
+        <p>My goal is to translate emerging hardware capabilities into practical, efficient, and secure end-to-end systems.</p>
+        <ul>
+          <li>Systems software, with an emphasis on database systems</li>
+          <li>GPU-accelerated analytical and out-of-memory query execution<br><span class="pub-meta">Related: <a href="/publications/#fascalsql">FaScalSQL</a>, <a href="/publications/#dmo-db">DMO-DB</a>, <a href="/publications/#gjp">GJP</a></span></li>
+          <li>Near-data processing with PIM and DPU hardware<br><span class="pub-meta">Related: <a href="/publications/#pid-join">PID-Join</a>, <a href="/publications/#spid-join">SPID-Join</a>, <a href="/publications/#mepid-join">MEPID-Join</a>, <a href="/publications/#pid-comm">PID-Comm</a></span></li>
+          <li>Join processing, skew handling, collective communication, and data movement<br><span class="pub-meta">Related: <a href="/publications/#spid-join">SPID-Join</a>, <a href="/publications/#pid-comm">PID-Comm</a>, <a href="/publications/#dmo-db">DMO-DB</a>, <a href="/publications/#gjp">GJP</a></span></li>
+          <li>Secure and resource-constrained edge computing, trusted execution environments, and on-device inference<br><span class="pub-meta">Related: <a href="/publications/#guardiann">GuardiaNN</a></span></li>
+        </ul>
+
+        <h2 id="projects">Research Projects</h2>
+        <dl class="cv">
+          <dt>2022 &ndash; Present</dt>
+          <dd><b>Development of New Concept PIM Semiconductor Leading Technology</b> (IITP)
+            <ul>
+              <li>Developed database and communication systems on commodity UPMEM DIMMs, including <a href="https://github.com/yonsei-hpcp/pid-join">PID-Join</a>, <a href="https://github.com/yonsei-hpcp/spid-join">SPID-Join</a>, and <a href="https://github.com/AIS-SNU/PID-Comm">PID-Comm</a>.</li>
+              <li>Released reproducibility artifacts for join processing and collective communication.</li>
+            </ul>
+          </dd>
+          <dt>2021</dt>
+          <dd><b>STACK: Smart, Attack-Resistant Internet of Things Networks</b> (KIAT)
+            <ul>
+              <li>Worked with trusted execution environment software for attack-resistant IoT systems.</li>
+              <li>Reported an STM32MP1 clock-rate computation bug in OP-TEE OS; the merged fix includes a <code>Reported-by</code> acknowledgment. <a href="https://github.com/OP-TEE/optee_os/pull/4904">[OP-TEE #4904]</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </main>
+      <footer class="footer">
+        <div class="badges" aria-hidden="true">
+          <span class="badge badge-1">SELECT *<br><b>FROM me;</b></span>
+          <span class="badge badge-2">viewable with<br><b>ANY BROWSER</b></span>
+          <span class="badge badge-3">best viewed at<br><b>800 x 600</b></span>
+          <span class="badge badge-4">100% free of<br><b>JAVASCRIPT</b></span>
+        </div>
+        <p class="small muted">Last updated: October 2, 2026 &middot; &copy; 2026 Chaemin Lim</p>
+      </footer>
+    </div>
+  </body>
+</html>

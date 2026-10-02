@@ -1,96 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <title>Resume &ndash; chaemin-lim</title>
-    <meta name="description" content="Chaemin Lim Resume">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/palettes/gruvbox-dark.css">
-    <link rel="stylesheet" href="/css/risotto.css">
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <title>Moved &ndash; Chaemin Lim</title>
+    <meta http-equiv="refresh" content="0; url=/CV.pdf">
+    <link rel="canonical" href="https://janoslim.github.io/CV.pdf">
   </head>
   <body>
-    <div class="page">
-      <header class="page__header">
-        <nav class="page__nav main-nav">
-          <ul>
-            <h1 class="page__logo"><a href="/" class="page__logo-inner">chaemin-lim</a></h1>
-            <li class="main-nav__item"><a class="nav-main-item" href="/">home</a></li>
-            <li class="main-nav__item"><a class="nav-main-item" href="/about/">about</a></li>
-            <li class="main-nav__item"><a class="nav-main-item active" href="/resume/">resume</a></li>
-            <li class="main-nav__item"><a class="nav-main-item" href="/contact/">contact</a></li>
-            <li class="main-nav__item"><a class="nav-main-item" href="/CV.pdf">CV.pdf</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="page__body">
-        <header class="content__header">
-          <h1>Resume / CV</h1>
-        </header>
-        <div class="content__body">
-          <p>Download full CV: <a href="/CV.pdf">CV.pdf</a></p>
-          <h2>Highlights</h2>
-          <ul>
-            <li>Ph.D. Candidate in Computer Science, Yonsei University (Sep. 2023 - Present)</li>
-            <li>M.S. in Artificial Intelligence, Yonsei University (Mar. 2021 - Aug. 2023)</li>
-            <li>B.A. in Journalism; B.Eng. in Computer Engineering (Double Major), Hankuk University of Foreign Studies (Mar. 2017 - Feb. 2021)</li>
-            <li>System Architect Intern, Mangoboost (Aug. 2025 - Jul. 2026)</li>
-            <li>Open-sourced research artifacts for PID-Join (SIGMOD 2023) and PID-Comm (ISCA 2024)</li>
-          </ul>
-
-          <h2>Research Focus</h2>
-          <ul>
-            <li>Systems software, with an emphasis on database systems</li>
-            <li>Hardware-aware execution and data movement across GPUs, PIM, and DPUs</li>
-            <li>GPU analytical and out-of-memory query engines</li>
-            <li>Near-data join processing, skew handling, and collective communication</li>
-            <li>Secure and resource-constrained edge computing</li>
-          </ul>
-
-          <h2>Selected Publications</h2>
-          <ul>
-            <li>MEPID-Join (VLDB 2027, to appear), GJP (SIGMOD 2027, to appear), FaScalSQL (ICDE 2026), DMO-DB (PACT 2025), SPID-Join (SIGMOD 2025), PID-Comm (ISCA 2024), PID-Join (SIGMOD 2023). Full list on the <a href="/about/">about page</a>.</li>
-          </ul>
-
-          <h2>Selected Projects and Open Source</h2>
-          <ul>
-            <li>
-              <b>Mangoboost (LLM serving):</b> System architecture and performance optimization for prefill&ndash;decode (PD) disaggregated serving on AMD GPU clusters, focusing on RDMA-based KV-cache transfer, multi-node execution, and ROCm inference paths. Selected upstream vLLM contributions:
-              <a href="https://github.com/vllm-project/vllm/pull/45227">AMD AITER MLA/MTP and FP8 correctness</a>,
-              <a href="https://github.com/vllm-project/vllm/pull/45224">shared-memory broadcast reliability</a>, and
-              <a href="https://github.com/vllm-project/vllm/pull/45222">MoRIIO proxy health monitoring</a>.
-            </li>
-            <li><b>PIM Semiconductor Leading Technology:</b> ABUMPIMP invited talk; <a href="https://github.com/yonsei-hpcp/pid-join">PID-Join</a> and <a href="https://github.com/AIS-SNU/PID-Comm">PID-Comm</a> open-source artifacts.</li>
-            <li><b>STACK IoT Security:</b> OP-TEE OS STM32MP1 clock-rate bug report acknowledged in a merged upstream fix. <a href="https://github.com/OP-TEE/optee_os/pull/4904">OP-TEE/optee_os#4904</a></li>
-          </ul>
-        </div>
-        <footer class="content__footer"></footer>
-      </section>
-      <section class="page__aside">
-        <div class="aside__about">
-          <div class="aside__about">
-            <img class="about__logo" src="/author.png" alt="Chaemin avatar">
-            <br />
-            <h1 class="about__title">chaemin-lim</h1>
-            <p class="about__description">Database systems + hardware-aware acceleration</p>
-          </div>
-          <ul class="aside__social-links">
-            <li><a href="https://github.com/janoslim" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;</li>
-            <li><a href="mailto:cmlim@yonsei.ac.kr" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;</li>
-            <li><a href="https://www.linkedin.com/in/chaemin-lim-038843263/" rel="me" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>&nbsp;</li>
-            <li><a href="https://scholar.google.com/citations?user=h1HSr_sAAAAJ" rel="me" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>&nbsp;</li>
-          </ul>
-        </div>
-      </section>
-      <footer class="page__footer">
-        <p><br/><span class="active">chaemin=# \q<br/><b></b></span><br/></p>
-        <br /><br />
-        <p class="copyright">© <a href="https://github.com/janoslim">janoslim</a></p>
-        <p class="advertisement">Built on the <a href="https://github.com/sweetbbak/sweetbbak.github.io">sweetbbak.github.io</a> design.</p>
-      </footer>
-    </div>
+    <p>This page has moved: <a href="/CV.pdf">/CV.pdf</a></p>
   </body>
 </html>
